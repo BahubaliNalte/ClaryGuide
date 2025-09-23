@@ -2,13 +2,43 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
+import { useEffect, useState } from "react";
+import { auth, db } from "../firebaseConfig";
+import { onAuthStateChanged, User } from "firebase/auth";
+import { get, ref } from "firebase/database";
 
 export default function Home() {
-			return (
-				<div className="min-h-screen bg-gradient-to-br from-[#f6fcfd] via-[#e3eaff] to-[#c1f2e7] flex flex-col">
-				<Navbar />
+	const [showProfileMsg, setShowProfileMsg] = useState(false);
+	useEffect(() => {
+		const unsubscribe = onAuthStateChanged(auth, async (user: User | null) => {
+			if (!user) {
+				setShowProfileMsg(false);
+				return;
+			}
+			const snap = await get(ref(db, `users/${user.uid}`));
+			if (!snap.exists()) {
+				setShowProfileMsg(true);
+				return;
+			}
+			const data = snap.val();
+			if (!data.mobile || !data.currentClass || !data.location) {
+				setShowProfileMsg(true);
+			} else {
+				setShowProfileMsg(false);
+			}
+		});
+		return () => unsubscribe();
+	}, []);
+	return (
+		<div className="min-h-screen bg-gradient-to-br from-[#f6fcfd] via-[#e3eaff] to-[#c1f2e7] flex flex-col">
+			<Navbar />
+			{showProfileMsg && (
+				<div className="max-w-xl mx-auto mt-6 bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded-2xl text-center animate-fade-in">
+					Please update your profile to continue using all features.
+				</div>
+			)}
 
-						{/* Mobile Drawer */}
+	{/* Mobile Drawer */}
 						<div id="mobileDrawer" className="fixed top-0 left-0 w-full h-full bg-white z-50 hidden md:hidden animate-fade-in">
 							<div className="flex flex-col items-end p-6">
 								<button className="text-3xl text-[#2386ff] mb-8" onClick={() => {
@@ -25,8 +55,8 @@ export default function Home() {
 							</div>
 						</div>
 
-				{/* HERO SECTION */}
-				<section className="w-full flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto mt-8 md:mt-16 px-4 animate-fade-in">
+	{/* HERO SECTION */}
+	<section className="w-full flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto mt-8 md:mt-16 px-4 animate-fade-in">
 				<div className="flex-1 flex flex-col gap-6">
 						  <h2 className="text-4xl md:text-5xl font-extrabold text-[#2386ff] leading-tight mb-2 animate-slide-in">Find careers that match who you actually are</h2>
 						  <p className="text-[#6b7280] text-lg mb-4 animate-fade-in">AI-assisted guidance, visual roadmaps and college info — reimagined for students.</p>
