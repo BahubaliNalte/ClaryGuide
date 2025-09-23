@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.animate-fade-in { animation: fadeIn 1s ease; }
+.animate-slide-in { animation: slideIn 1s ease; } 
+.animate-bounce { animation: bounce 2.5s infinite; } 
+.animate-pulse { animation: pulse 2s infinite; }
