@@ -1,35 +1,13 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "../../components/Navbar";
 
 export default function Features() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#f6fcfd] via-[#e3eaff] to-[#c1f2e7] flex flex-col">
-      {/* Header / Nav */}
-      <header className="w-full flex items-center justify-between px-4 md:px-8 py-6 bg-transparent animate-fade-in">
-        <div className="flex items-center gap-3">
-          <Image src="/logo-favicon.png" alt="ClaryGuide Logo" width={48} height={48} className="rounded-xl drop-shadow-lg animate-fade-in" />
-          <div>
-            <h1 className="font-bold text-2xl text-[#2386ff] tracking-tight animate-slide-in">ClaryGuide</h1>
-            <p className="text-sm text-[#6b7280] animate-fade-in">Clarity Today, Career Tomorrow</p>
-          </div>
-        </div>
-        <nav className="hidden md:flex items-center gap-8 text-base md:text-lg font-medium">
-          <Link href="/" className="text-[#1a3c6b] hover:text-[#2386ff] pb-1">Home</Link>
-          <Link href="/features" className="text-[#2386ff] font-bold border-b-2 border-[#2386ff] pb-1">Features</Link>
-          <Link href="/chatbot" className="text-[#1a3c6b] hover:text-[#2386ff] pb-1">ClaryBot</Link>
-          <Link href="/about" className="text-[#1a3c6b] hover:text-[#2386ff] pb-1">About Us</Link>
-          <Link href="/contact" className="text-[#1a3c6b] hover:text-[#2386ff] pb-1">Contact Us</Link>
-        </nav>
-        <button className="md:hidden text-3xl text-[#2386ff] ml-auto" onClick={() => {
-          const drawer = document.getElementById('mobileDrawer');
-          if (drawer) drawer.classList.toggle('hidden');
-        }} aria-label="Open menu">☰</button>
-        <div className="ml-4 flex items-center">
-          <Image src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/person-circle.svg" alt="Profile" width={40} height={40} className="hover:scale-110 transition-transform duration-200" />
-        </div>
-      </header>
-
+      <Navbar />
       {/* Mobile Drawer */}
       <div id="mobileDrawer" className="fixed top-0 left-0 w-full h-full bg-white z-50 hidden md:hidden animate-fade-in">
         <div className="flex flex-col items-end p-6">
@@ -95,6 +73,9 @@ export default function Features() {
           <div className="text-base text-[#8D44FF] animate-fade-in text-center w-full sm:w-auto">&copy; 2025 ClaryGuide. All rights reserved.</div>
         </div>
       </footer>
+
+      {/* Floating Chatbot */}
+      <button id="botBtn" className="fixed bottom-6 right-6 bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white rounded-full p-4 shadow-lg text-2xl hover:scale-110 transition-transform duration-200 animate-fade-in" aria-label="Open chat">💬</button>
     </div>
   );
 }
