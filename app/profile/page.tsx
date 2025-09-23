@@ -6,6 +6,7 @@ import { ref, set, get } from "firebase/database";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Navbar from "../../components/Navbar";
+import Link from "next/link";
 
 export default function ProfilePage() {
   const [user, setUser] = useState<User | null>(null);
@@ -38,7 +39,7 @@ export default function ProfilePage() {
     return () => unsubscribe();
   }, []);
 
-  const handleUpdate = async (e: any) => {
+  const handleUpdate = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError("");
     if (!user) return;
@@ -57,8 +58,12 @@ export default function ProfilePage() {
         provider: user.providerData[0]?.providerId || "password",
       });
       router.push("/");
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("Failed to update profile. Please try again.");
+      }
     }
   };
 
@@ -89,11 +94,11 @@ export default function ProfilePage() {
             <span className="font-bold text-[#2386ff] text-lg animate-slide-in">ClaryGuide</span>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 flex-wrap text-lg items-center justify-center w-full sm:w-auto mb-4 sm:mb-0">
-            <a href="/" className="text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</a>
-            <a href="/about" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">About Us</a>
-            <a href="/features" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Features</a>
-            <a href="/chatbot" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">ClaryBot</a>
-            <a href="/contact" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Contact</a>
+            <Link href="/" className="text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
+            <Link href="/about" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">About Us</Link>
+            <Link href="/features" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Features</Link>
+            <Link href="/chatbot" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">ClaryBot</Link>
+            <Link href="/contact" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Contact</Link>
           </div>
           <div className="text-base text-[#8D44FF] animate-fade-in text-center w-full sm:w-auto">&copy; 2025 ClaryGuide. All rights reserved.</div>
         </div>

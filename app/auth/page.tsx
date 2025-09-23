@@ -30,8 +30,12 @@ export default function AuthPage() {
         const res = await createUserWithEmailAndPassword(auth, email, password);
         setUser(res.user);
       }
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("Authentication failed. Please try again.");
+      }
     }
   };
 
@@ -40,8 +44,12 @@ export default function AuthPage() {
     try {
       const res = await signInWithPopup(auth, googleProvider);
       setUser(res.user);
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("Google authentication failed. Please try again.");
+      }
     }
   };
 

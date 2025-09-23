@@ -14,7 +14,7 @@ export default function Contact() {
 	const [success, setSuccess] = useState("");
 	const [error, setError] = useState("");
 
-	const handleSubmit = async (e: React.FormEvent) => {
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setSuccess("");
 		setError("");
@@ -31,9 +31,9 @@ export default function Contact() {
 			setMobile("");
 			setEmail("");
 			setMessage("");
-		} catch (err: any) {
-			setError("Failed to send message. Please try again.");
-		}
+			} catch {
+				setError("Failed to send message. Please try again.");
+			}
 	};
 
 	return (
