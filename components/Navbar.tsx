@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,6 +10,18 @@ import { onAuthStateChanged, User, signOut } from "firebase/auth";
 export default function Navbar() {
   const [user, setUser] = useState<User | null>(null);
   const [showDetails, setShowDetails] = useState(false);
+  const cardRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (!showDetails) return;
+    function handleClickOutside(event: MouseEvent) {
+      if (cardRef.current && !cardRef.current.contains(event.target as Node)) {
+        setShowDetails(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [showDetails]);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -99,7 +111,7 @@ export default function Navbar() {
           <Image src={user?.photoURL || "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/person-circle.svg"} alt="Profile" width={40} height={40} className="hover:scale-110 transition-transform duration-200 rounded-full" />
         </button>
         {showDetails && user && (
-          <div className="absolute top-12 right-0 bg-white rounded-xl shadow-lg p-4 z-50 min-w-[220px] animate-fade-in">
+          <div ref={cardRef} className="absolute top-12 right-0 bg-white rounded-xl shadow-lg p-4 z-50 min-w-[220px] animate-fade-in">
             <div className="flex flex-col items-center gap-2">
               <Image src={user.photoURL || "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/person-circle.svg"} alt="Profile" width={48} height={48} className="rounded-full" />
               <span className="font-bold text-[#2386ff]">{user.displayName || user.email}</span>
