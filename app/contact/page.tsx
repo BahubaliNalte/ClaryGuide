@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { db } from "../../firebaseConfig";
 import { ref, push } from "firebase/database";
@@ -13,6 +14,14 @@ export default function Contact() {
 	const [message, setMessage] = useState("");
 	const [success, setSuccess] = useState("");
 	const [error, setError] = useState("");
+	const pathname = usePathname();
+	const navLinks = [
+		{ href: "/", label: "Home" },
+		{ href: "/features", label: "Features" },
+		{ href: "/chatbot", label: "ClaryBot" },
+		{ href: "/about", label: "About Us" },
+		{ href: "/contact", label: "Contact Us" },
+	];
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -41,21 +50,32 @@ export default function Contact() {
 			<Navbar />
 
 			{/* Mobile Drawer */}
-			<div id="mobileDrawer" className="fixed top-0 left-0 w-full h-full bg-white z-50 hidden md:hidden animate-fade-in">
-				<div className="flex flex-col items-end p-6">
-					<button className="text-3xl text-[#2386ff] mb-8" onClick={() => {
-						const drawer = document.getElementById('mobileDrawer');
-						if (drawer) drawer.classList.add('hidden');
-					}} aria-label="Close menu">✕</button>
-					<nav className="flex flex-col gap-6 text-lg font-medium items-center w-full">
-						<Link href="/" className="text-[#2386ff] font-bold">Home</Link>
-						<Link href="/features" className="text-[#1a3c6b]">Features</Link>
-						<Link href="/chatbot" className="text-[#1a3c6b]">ClaryBot</Link>
-						<Link href="/about" className="text-[#1a3c6b]">About Us</Link>
-						<Link href="/contact" className="text-[#1a3c6b]">Contact Us</Link>
-					</nav>
-				</div>
-			</div>
+					<div id="mobileDrawer" className="fixed top-0 left-0 w-full h-full bg-white z-50 hidden md:hidden animate-fade-in">
+						<div className="flex flex-col items-end p-6">
+							<button className="text-3xl text-[#2386ff] mb-8" onClick={() => {
+								const drawer = document.getElementById('mobileDrawer');
+								if (drawer) drawer.classList.add('hidden');
+							}} aria-label="Close menu">✕</button>
+							<nav className="flex flex-col gap-6 text-lg font-medium items-center w-full">
+								{navLinks.map(({ href, label }) => {
+									const isActive = pathname === href;
+									return (
+										<Link
+											key={href}
+											href={href}
+											className={
+												isActive
+													? "text-[#2386ff] font-bold border-b-2 border-[#2386ff] pb-1"
+													: "text-[#1a3c6b] hover:text-[#2386ff] pb-1"
+											}
+										>
+											{label}
+										</Link>
+									);
+								})}
+							</nav>
+						</div>
+					</div>
 
 			{/* Contact Form Section */}
 			<main className="flex-1 flex flex-col items-center justify-center px-4 py-12 animate-fade-in">

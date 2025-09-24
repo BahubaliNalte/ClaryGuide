@@ -67,9 +67,32 @@ export default function Navbar() {
           );
         })}
       </nav>
+      {/* Mobile Drawer Nav (for active link highlight) */}
+      <nav id="mobileDrawerNav" className="md:hidden hidden">
+        <div className="flex flex-col gap-6 text-lg font-medium items-center w-full pt-8">
+          {navLinks.map(({ href, label }) => {
+            const isActive = pathname === href;
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={
+                  isActive
+                    ? "text-[#2386ff] font-bold border-b-2 border-[#2386ff] pb-1"
+                    : "text-[#1a3c6b] hover:text-[#2386ff] pb-1"
+                }
+              >
+                {label}
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
       <button className="md:hidden text-3xl text-[#2386ff] ml-auto" onClick={() => {
         const drawer = document.getElementById('mobileDrawer');
+        const drawerNav = document.getElementById('mobileDrawerNav');
         if (drawer) drawer.classList.toggle('hidden');
+        if (drawerNav) drawerNav.classList.toggle('hidden');
       }} aria-label="Open menu">☰</button>
       <div className="ml-4 flex items-center relative">
         <button onClick={handleProfileClick} className="focus:outline-none">

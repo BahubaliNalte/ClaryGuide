@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import { useState, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([
@@ -12,6 +13,14 @@ export default function Chatbot() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const chatEndRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/features", label: "Features" },
+    { href: "/chatbot", label: "ClaryBot" },
+    { href: "/about", label: "About Us" },
+    { href: "/contact", label: "Contact Us" },
+  ];
 
   const sendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -53,24 +62,35 @@ export default function Chatbot() {
             if (drawer) drawer.classList.add('hidden');
           }} aria-label="Close menu">✕</button>
           <nav className="flex flex-col gap-6 text-lg font-medium items-center w-full">
-            <Link href="/" className="text-[#2386ff] font-bold">Home</Link>
-            <Link href="/features" className="text-[#1a3c6b]">Features</Link>
-            <Link href="/chatbot" className="text-[#1a3c6b]">ClaryBot</Link>
-            <Link href="/about" className="text-[#1a3c6b]">About Us</Link>
-            <Link href="/contact" className="text-[#1a3c6b]">Contact Us</Link>
+            {navLinks.map(({ href, label }) => {
+              const isActive = pathname === href;
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className={
+                    isActive
+                      ? "text-[#2386ff] font-bold border-b-2 border-[#2386ff] pb-1"
+                      : "text-[#1a3c6b] hover:text-[#2386ff] pb-1"
+                  }
+                >
+                  {label}
+                </Link>
+              );
+            })}
           </nav>
         </div>
       </div>
 
       {/* Chatbot UI Section */}
-      <main className="flex-1 flex flex-col items-center justify-center px-4 py-12 animate-fade-in">
-        <div className="max-w-xl w-full bg-white/80 rounded-2xl shadow-2xl p-8 backdrop-blur-lg flex flex-col gap-6">
-          <div className="flex items-center gap-3 mb-4">
-            <Image src="/logo-favicon.png" alt="ClaryBot" width={40} height={40} className="rounded-full" />
-            <h2 className="text-3xl font-extrabold text-[#2386ff]">ClaryBot</h2>
+      <main className="flex-1 flex flex-col items-center justify-center px-2 sm:px-4 py-6 sm:py-12 animate-fade-in">
+        <div className="w-full max-w-md sm:max-w-xl bg-white/80 rounded-2xl shadow-2xl p-4 sm:p-8 backdrop-blur-lg flex flex-col gap-6">
+          <div className="flex items-center gap-3 mb-2 sm:mb-4">
+            <Image src="/logo-favicon.png" alt="ClaryBot" width={36} height={36} className="rounded-full" />
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2386ff]">ClaryBot</h2>
           </div>
-          <div className="flex-1 overflow-y-auto max-h-64 mb-4">
-            <div className="flex flex-col gap-3">
+          <div className="flex-1 overflow-y-auto max-h-48 sm:max-h-64 mb-2 sm:mb-4">
+            <div className="flex flex-col gap-2 sm:gap-3">
               {messages.map((msg, idx) => (
                 <div
                   key={idx}
@@ -86,18 +106,18 @@ export default function Chatbot() {
               <div ref={chatEndRef} />
             </div>
           </div>
-          <form className="flex gap-2 items-center" onSubmit={sendMessage}>
+          <form className="flex flex-col sm:flex-row gap-2 items-center" onSubmit={sendMessage}>
             <input
               type="text"
               placeholder="Type your message..."
-              className="flex-1 border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b] placeholder:text-[#6b7280] focus:outline-none focus:ring-2 focus:ring-[#2386ff]"
+              className="w-full sm:flex-1 border border-[#e3eaff] rounded-2xl px-4 py-3 text-base sm:text-lg text-[#1a3c6b] placeholder:text-[#6b7280] focus:outline-none focus:ring-2 focus:ring-[#2386ff]"
               value={input}
               onChange={e => setInput(e.target.value)}
               disabled={loading}
             />
             <button
               type="submit"
-              className="bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white font-bold px-6 py-3 rounded-2xl shadow-lg text-lg hover:scale-105 transition-transform duration-200"
+              className="w-full sm:w-auto bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white font-bold px-6 py-3 rounded-2xl shadow-lg text-base sm:text-lg hover:scale-105 transition-transform duration-200"
               disabled={loading || !input.trim()}
             >
               {loading ? "..." : "Send"}

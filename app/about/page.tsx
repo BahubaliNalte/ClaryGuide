@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
+import { usePathname } from "next/navigation";
 
 const team = [
   { name: "add your name", role: "Founder & CEO", img: "/logo-favicon.png" },
@@ -13,6 +14,14 @@ const team = [
 ];
 
 export default function About() {
+  const pathname = usePathname();
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/features", label: "Features" },
+    { href: "/chatbot", label: "ClaryBot" },
+    { href: "/about", label: "About Us" },
+    { href: "/contact", label: "Contact Us" },
+  ];
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#f6fcfd] via-[#e3eaff] to-[#c1f2e7] flex flex-col">
       <Navbar />
@@ -25,11 +34,22 @@ export default function About() {
             if (drawer) drawer.classList.add('hidden');
           }} aria-label="Close menu">✕</button>
           <nav className="flex flex-col gap-6 text-lg font-medium items-center w-full">
-            <Link href="/" className="text-[#2386ff] font-bold">Home</Link>
-            <Link href="/features" className="text-[#1a3c6b]">Features</Link>
-            <Link href="/chatbot" className="text-[#1a3c6b]">ClaryBot</Link>
-            <Link href="/about" className="text-[#1a3c6b]">About Us</Link>
-            <Link href="/contact" className="text-[#1a3c6b]">Contact Us</Link>
+            {navLinks.map(({ href, label }) => {
+              const isActive = pathname === href;
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className={
+                    isActive
+                      ? "text-[#2386ff] font-bold border-b-2 border-[#2386ff] pb-1"
+                      : "text-[#1a3c6b] hover:text-[#2386ff] pb-1"
+                  }
+                >
+                  {label}
+                </Link>
+              );
+            })}
           </nav>
         </div>
       </div>
