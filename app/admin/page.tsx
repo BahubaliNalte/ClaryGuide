@@ -41,8 +41,8 @@ export default function AdminPage() {
         })
       );
     });
-    // Fetch contact us data
-    const contactRef = ref(db, "contact_us");
+  // Fetch contact us data 
+  const contactRef = ref(db, "contactus");
     onValue(contactRef, (snapshot) => {
       const data = snapshot.val() || {};
       setContacts(
@@ -142,30 +142,32 @@ export default function AdminPage() {
               {mentorRequests.length === 0 ? (
                 <div>No mentor requests.</div>
               ) : (
-                <ul className="space-y-3">
+                <div className="space-y-6">
                   {mentorRequests.map((req) => (
-                    <li key={req.id} className="border-b pb-2">
-                      <div className="text-[#1a3c6b]"><strong>Name:</strong> {req.name}</div>
-                      <div className="text-[#1a3c6b]"><strong>Email:</strong> {req.email}</div>
-                      <div className="text-[#1a3c6b]"><strong>Mobile:</strong> {req.mobile}</div>
-                      <div className="text-[#1a3c6b]"><strong>Mentorship Area:</strong> {req.mentorshipArea}</div>
-                      <div className="text-[#1a3c6b]"><strong>Date:</strong> {req.date}</div>
-                      <div className="text-[#1a3c6b]"><strong>Time:</strong> {req.time}</div>
-                      <div className="text-[#1a3c6b]"><strong>Message:</strong> {req.message}</div>
-                      <div className="text-[#1a3c6b]"><strong>Status:</strong> {req.status || "pending"}</div>
-                      {req.meetingLink && (
-                        <div className="text-[#2386ff]"><strong>Meeting Link:</strong> <a href={req.meetingLink} target="_blank" rel="noopener noreferrer" className="underline">{req.meetingLink}</a></div>
-                      )}
-                      <div className="flex gap-2 mt-2 items-center">
-                        <button onClick={() => handleMentorStatus(req.id, "accepted")} className="text-green-600 hover:underline">Accept</button>
-                        <button onClick={() => handleMentorStatus(req.id, "rejected")} className="text-red-500 hover:underline">Reject</button>
-                        <button onClick={() => handleDeleteMentorRequest(req.id)} className="text-gray-500 hover:underline">Delete</button>
-                        <input type="text" placeholder="Meeting Link" value={meetingLinks[req.id] || ""} onChange={e => setMeetingLinks({ ...meetingLinks, [req.id]: e.target.value })} className="border border-[#e3eaff] rounded-2xl px-2 py-1 text-sm text-[#1a3c6b] ml-2" />
-                        <button onClick={() => handleSendMeetingLink(req.id)} className="bg-[#2386ff] text-white px-2 py-1 rounded-2xl text-sm ml-1">Send Link</button>
+                    <div key={req.id} className="rounded-xl border border-[#e3eaff] bg-white/90 shadow p-5 mb-2">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mb-2">
+                        <div className="text-[#1a3c6b] break-all"><strong>Name:</strong> {req.name}</div>
+                        <div className="text-[#1a3c6b] break-all"><strong>Email:</strong> {req.email}</div>
+                        <div className="text-[#1a3c6b]"><strong>Mobile:</strong> {req.mobile}</div>
+                        <div className="text-[#1a3c6b]"><strong>Mentorship Area:</strong> {req.mentorshipArea}</div>
+                        <div className="text-[#1a3c6b]"><strong>Date:</strong> {req.date}</div>
+                        <div className="text-[#1a3c6b]"><strong>Time:</strong> {req.time}</div>
+                        <div className="text-[#1a3c6b] col-span-2 break-all"><strong>Message:</strong> {req.message}</div>
+                        <div className="text-[#1a3c6b]"><strong>Status:</strong> <span className={`font-bold ${req.status === "accepted" ? "text-green-600" : req.status === "rejected" ? "text-red-500" : "text-[#2386ff]"}`}>{req.status || "pending"}</span></div>
+                        {req.meetingLink && (
+                          <div className="text-[#2386ff] col-span-2 break-all"><strong>Meeting Link:</strong> <a href={req.meetingLink} target="_blank" rel="noopener noreferrer" className="underline break-all">{req.meetingLink}</a></div>
+                        )}
                       </div>
-                    </li>
+                      <div className="flex flex-wrap gap-2 mt-4 items-center">
+                        <button onClick={() => handleMentorStatus(req.id, "accepted")} className="bg-green-100 text-green-700 px-3 py-1 rounded-xl font-semibold hover:bg-green-200">Accept</button>
+                        <button onClick={() => handleMentorStatus(req.id, "rejected")} className="bg-red-100 text-red-600 px-3 py-1 rounded-xl font-semibold hover:bg-red-200">Reject</button>
+                        <button onClick={() => handleDeleteMentorRequest(req.id)} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-xl font-semibold hover:bg-gray-200">Delete</button>
+                        <input type="text" placeholder="Meeting Link" value={meetingLinks[req.id] || ""} onChange={e => setMeetingLinks({ ...meetingLinks, [req.id]: e.target.value })} className="border border-[#e3eaff] rounded-xl px-3 py-1 text-sm text-[#1a3c6b]" />
+                        <button onClick={() => handleSendMeetingLink(req.id)} className="bg-[#2386ff] text-white px-3 py-1 rounded-xl text-sm font-semibold">Send Link</button>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               )}
             </section>
           </div>
