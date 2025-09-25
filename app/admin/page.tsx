@@ -18,9 +18,12 @@ export default function AdminPage() {
     );
     setMeetingLinks({ ...meetingLinks, [id]: "" });
   };
-  const [users, setUsers] = useState<any[]>([]);
-  const [contacts, setContacts] = useState<any[]>([]);
-  const [mentorRequests, setMentorRequests] = useState<any[]>([]);
+  type User = { id: string; name?: string; email?: string; value?: any };
+  type Contact = { id: string; name?: string; email?: string; message?: string; value?: any };
+  type MentorRequest = { id: string; name?: string; email?: string; mobile?: string; mentorshipArea?: string; date?: string; time?: string; message?: string; status?: string; meetingLink?: string; value?: any };
+  const [users, setUsers] = useState<User[]>([]);
+  const [contacts, setContacts] = useState<Contact[]>([]);
+  const [mentorRequests, setMentorRequests] = useState<MentorRequest[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

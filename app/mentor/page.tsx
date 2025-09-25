@@ -8,7 +8,8 @@ import { ref, push } from "firebase/database";
 
 
 export default function MentorPage() {
-  const [myRequests, setMyRequests] = useState<any[]>([]);
+  type MentorRequest = { id: string; name?: string; email?: string; mobile?: string; mentorshipArea?: string; date?: string; time?: string; message?: string; status?: string; meetingLink?: string; value?: any };
+  const [myRequests, setMyRequests] = useState<MentorRequest[]>([]);
   const [showRequests, setShowRequests] = useState(false);
   // Fetch user's submitted requests by email
   const fetchMyRequests = async () => {
@@ -51,7 +52,7 @@ export default function MentorPage() {
       setForm({ name: "", email: "", mobile: "", message: "", date: "", time: "", mentorshipArea: "Career Guidance" });
       setShowRequests(true);
       fetchMyRequests();
-    } catch (err) {
+    } catch {
       setError("Failed to submit request. Please try again.");
     }
     setLoading(false);
