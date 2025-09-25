@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import { db } from "../../firebaseConfig";
 import { ref, push } from "firebase/database";
@@ -33,6 +33,30 @@ export default function MentorPage() {
     time: "",
     mentorshipArea: "Career Guidance",
   });
+
+  // Auto-fill email from auth
+  useEffect(() => {
+    // Replace with your actual auth logic
+    const getAuthEmail = async () => {
+      try {
+        // Example: using Firebase Auth
+        const { getAuth } = await import("firebase/auth");
+        const auth = getAuth();
+        if (auth.currentUser && typeof auth.currentUser.email === "string") {
+          setForm((prev) => ({ ...prev, email: auth.currentUser.email ?? "" }));
+        }
+      } catch {}
+    };
+    getAuthEmail();
+  }, []);
+
+  // Fetch requests whenever form.email is set
+  useEffect(() => {
+    if (form.email) {
+      fetchMyRequests();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [form.email]);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -66,49 +90,92 @@ export default function MentorPage() {
         <p className="text-lg text-[#1a3c6b] text-center mb-8">Book a session with a mentor for career guidance, college admissions, or personal growth.</p>
         <div className="max-w-lg mx-auto bg-white/80 rounded-2xl shadow-2xl p-8 backdrop-blur-lg">
           <h3 className="text-2xl font-bold text-[#2386ff] mb-4 text-center">Request a Mentor Session</h3>
-          <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-            <input name="name" type="text" placeholder="Your Name" value={form.name} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
-            <input name="email" type="email" placeholder="Your Email" value={form.email} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
-            <input name="mobile" type="tel" placeholder="Mobile Number" value={form.mobile} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
-            <select name="mentorshipArea" value={form.mentorshipArea} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b] bg-white">
-              <option value="Career Guidance">Career Guidance</option>
-              <option value="College Admission">College Admission</option>
-              <option value="Subject Help">Subject Help</option>
-              <option value="Project Guidance">Project Guidance</option>
-              <option value="Other">Other</option>
-            </select>
-            <textarea name="message" placeholder="Your Message" value={form.message} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
-            <input name="date" type="date" value={form.date} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
-            <input name="time" type="time" value={form.time} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
-            {error && <div className="text-red-500 text-sm text-center">{error}</div>}
-            {success && <div className="text-green-600 text-sm text-center">{success}</div>}
-            <button type="submit" disabled={loading} className="bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white font-bold px-6 py-3 rounded-2xl shadow-lg text-lg hover:scale-105 transition-transform duration-200">{loading ? "Submitting..." : "Book Session"}</button>
-          </form>
-        </div>
-        {/* Submitted Requests Section */}
-        <div className="max-w-lg mx-auto mt-8 bg-white/80 rounded-2xl shadow-2xl p-8 backdrop-blur-lg">
-          <h3 className="text-xl font-bold text-[#2386ff] mb-4 text-center">Your Submitted Requests</h3>
-          <button onClick={() => { setShowRequests(true); fetchMyRequests(); }} className="bg-[#2386ff] text-white px-4 py-2 rounded-2xl mb-4">Show My Requests</button>
-          {showRequests && (
-            myRequests.length === 0 ? (
-              <div className="text-center text-[#1a3c6b]">No requests found for your email.</div>
-            ) : (
-              <ul className="space-y-4">
-                {myRequests.map((req) => (
-                  <li key={req.id} className="border-b pb-2">
-                    <div className="text-[#1a3c6b]"><strong>Date:</strong> {req.date}</div>
-                    <div className="text-[#1a3c6b]"><strong>Time:</strong> {req.time}</div>
-                    <div className="text-[#1a3c6b]"><strong>Mentorship Area:</strong> {req.mentorshipArea}</div>
-                    <div className="text-[#1a3c6b]"><strong>Status:</strong> {req.status || "pending"}</div>
-                    {req.meetingLink && (
-                      <div className="text-[#2386ff]"><strong>Meeting Link:</strong> <a href={req.meetingLink} target="_blank" rel="noopener noreferrer" className="underline">{req.meetingLink}</a></div>
+          {/* Only show request data if user has already submitted a request; otherwise show form */}
+          {(() => {
+            const activeRequest = myRequests.find(r => r.status !== "done");
+            if (activeRequest) {
+              return (
+                <div className="text-[#1a3c6b] text-center py-6">
+                  <div className="text-lg font-semibold mb-2">Your Submitted Mentor Request</div>
+                  <div className="bg-[#f6fcfd] rounded-xl p-4 shadow text-left inline-block mx-auto">
+                    <div className="mb-2"><strong>Name:</strong> {activeRequest.name}</div>
+                    <div className="mb-2"><strong>Email:</strong> {activeRequest.email}</div>
+                    <div className="mb-2"><strong>Mobile:</strong> {activeRequest.mobile}</div>
+                    <div className="mb-2"><strong>Mentorship Area:</strong> {activeRequest.mentorshipArea}</div>
+                    <div className="mb-2"><strong>Date:</strong> {activeRequest.date}</div>
+                    <div className="mb-2"><strong>Time:</strong> {activeRequest.time}</div>
+                    <div className="mb-2"><strong>Message:</strong> {activeRequest.message}</div>
+                    <div className="mb-2"><strong>Status:</strong> {activeRequest.status || "pending"}</div>
+                    {activeRequest.meetingLink && (
+                      <div className="mb-2 text-[#2386ff]"><strong>Meeting Link:</strong> <a href={activeRequest.meetingLink} target="_blank" rel="noopener noreferrer" className="underline">{activeRequest.meetingLink}</a></div>
                     )}
-                  </li>
-                ))}
-              </ul>
-            )
-          )}
+                  </div>
+                  <div className="mt-4 text-[#1a3c6b]">Please wait for your session to complete before booking another.</div>
+                </div>
+              );
+            } else {
+              return (
+                <>
+                  <div className="text-[#1a3c6b] text-base mb-4 bg-[#e3eaff]/60 rounded-xl p-3 text-center">
+                    <strong>Note:</strong> You can book a session only for dates from <span className="font-semibold">today</span> up to <span className="font-semibold">1 month ahead</span>.<br />
+                    Time slots are available only between <span className="font-semibold">07:00 AM</span> and <span className="font-semibold">10:00 PM</span>.
+                  </div>
+                  <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+                    <input name="name" type="text" placeholder="Your Name" value={form.name} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
+                    <input
+                      name="email"
+                      type="email"
+                      placeholder="Your Email"
+                      value={form.email}
+                      onChange={handleChange}
+                      required
+                      className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b] bg-gray-100"
+                      disabled={!!form.email}
+                    />
+                    <input name="mobile" type="tel" placeholder="Mobile Number" value={form.mobile} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
+                    <select name="mentorshipArea" value={form.mentorshipArea} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b] bg-white">
+                      <option value="Career Guidance">Career Guidance</option>
+                      <option value="College Admission">College Admission</option>
+                      <option value="Subject Help">Subject Help</option>
+                      <option value="Project Guidance">Project Guidance</option>
+                      <option value="Other">Other</option>
+                    </select>
+                    <textarea name="message" placeholder="Your Message" value={form.message} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
+                    <input
+                      name="date"
+                      type="date"
+                      value={form.date}
+                      onChange={handleChange}
+                      required
+                      min={new Date().toISOString().split("T")[0]}
+                      max={(() => {
+                        const d = new Date();
+                        d.setMonth(d.getMonth() + 1);
+                        return d.toISOString().split("T")[0];
+                      })()}
+                      className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]"
+                    />
+                    <input
+                      name="time"
+                      type="time"
+                      value={form.time}
+                      onChange={handleChange}
+                      required
+                      min="07:00"
+                      max="22:00"
+                      step="900"
+                      className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]"
+                    />
+                    {error && <div className="text-red-500 text-sm text-center">{error}</div>}
+                    {success && <div className="text-green-600 text-sm text-center">{success}</div>}
+                    <button type="submit" disabled={loading} className="bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white font-bold px-6 py-3 rounded-2xl shadow-lg text-lg hover:scale-105 transition-transform duration-200">{loading ? "Submitting..." : "Book Session"}</button>
+                  </form>
+                </>
+              );
+            }
+          })()}
         </div>
+        {/* Removed 'Your Submitted Requests' section as requested */}
       </main>
 
        {/* Footer */}

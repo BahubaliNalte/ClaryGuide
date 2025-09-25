@@ -493,90 +493,121 @@ export default function QuizPage() {
   };
   const recommendedDomain = getRecommendation();
 
+  const [showInstructions, setShowInstructions] = useState(true);
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#f6fcfd] via-[#e3eaff] to-[#c1f2e7] flex flex-col">
       <Navbar />
       <main className="flex-1 max-w-2xl mx-auto py-12 px-4">
         <h2 className="text-3xl font-bold text-[#2386ff] mb-6 text-center">Career Guidance Quiz</h2>
-        {!showResult ? (
-          <form className="flex flex-col gap-8" onSubmit={handleNextSection}>
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-[#00bfae] mb-4">{quizSections[currentSection].title} <span className="text-base font-normal text-[#2386ff]">({quizSections[currentSection].questions.length} Qs)</span></h3>
-              {quizSections[currentSection].questions.map((q, qIdx) => {
-                const globalIdx = getGlobalIdx(currentSection, qIdx);
-                return (
-                  <div key={globalIdx} className="bg-white/80 rounded-2xl shadow-lg p-6 mb-4">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-lg font-bold text-[#14304a] drop-shadow-sm">Q{globalIdx + 1}. {q.question}</span>
-                      <span className="text-xs text-[#2386ff]">Section {currentSection + 1} of {quizSections.length}</span>
-                    </div>
-                    <div className="flex flex-col gap-3">
-                      {q.options.map((opt, oIdx) => (
-                        <label key={oIdx} className={`flex items-center gap-2 text-base rounded-lg px-2 py-2 cursor-pointer border border-[#c1f2e7] ${answers[globalIdx] === opt.value ? "bg-[#e3eaff] font-bold text-[#14304a]" : "bg-white text-[#14304a] hover:bg-[#f6fcfd]"}`}>
-                          <input
-                            type="radio"
-                            name={`q${globalIdx}`}
-                            value={opt.value}
-                            checked={answers[globalIdx] === opt.value}
-                            onChange={() => handleOption(globalIdx, opt.value)}
-                            required
-                            className="accent-[#2386ff] w-4 h-4"
-                          />
-                          <span className="font-semibold text-[#14304a]">{opt.text}</span>
-                        </label>
-                      ))}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="flex justify-between items-center mb-4">
-              <span className="text-[#2386ff] font-semibold">Progress: {answers.filter((a, idx) => idx < getGlobalIdx(currentSection + 1, 0)).length} / {getGlobalIdx(currentSection + 1, 0)} answered</span>
-              <button type="submit" disabled={!isSectionComplete()} className={`bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white font-bold px-6 py-3 rounded-2xl shadow-lg text-lg hover:scale-105 transition-transform duration-200 ${!isSectionComplete() ? "opacity-50 cursor-not-allowed" : ""}`}>{currentSection < quizSections.length - 1 ? "Next Section" : "See My Career Recommendation"}</button>
-            </div>
-          </form>
-        ) : (
-          <div className="bg-white/80 rounded-2xl shadow-lg p-8 mt-8 text-center">
-            <h3 className="text-2xl font-bold text-[#2386ff] mb-4">Recommended Career Domain</h3>
-            <div className="text-xl text-[#1a3c6b] mb-2">{recommendedDomain}</div>
-            <div className="text-[#1a3c6b] mb-4">{domainDescriptions[recommendedDomain]}</div>
-            <h4 className="text-lg font-semibold text-[#2386ff] mb-2">Degree & Career Suggestions:</h4>
-            <ul className="text-left text-[#1a3c6b] list-disc ml-6">
-              {recommendedDomain === "Engineering/Tech" && (
-                <>
-                  <li><strong>Popular Degrees:</strong> B.Tech, BCA, B.Sc (CS/IT), Diploma in Engineering</li>
-                  <li><strong>Careers:</strong> Engineer, Software Developer, Data Scientist, Robotics, Researcher</li>
-                  <li><strong>Exams:</strong> JEE, GATE, State CET, SSC, UPSC (Engineering Services)</li>
-                  <li><strong>Industries:</strong> Technology, IT, Manufacturing, Research, Government</li>
-                </>
-              )}
-              {recommendedDomain === "Medicine" && (
-                <>
-                  <li><strong>Popular Degrees:</strong> MBBS, BDS, B.Pharm, Nursing, B.Sc (Biology)</li>
-                  <li><strong>Careers:</strong> Doctor, Nurse, Pharmacist, Medical Researcher, Therapist</li>
-                  <li><strong>Exams:</strong> NEET, AIIMS, State CET, Nursing Entrance</li>
-                  <li><strong>Industries:</strong> Healthcare, Hospitals, Pharma, Research, Government</li>
-                </>
-              )}
-              {recommendedDomain === "Law/Politics" && (
-                <>
-                  <li><strong>Popular Degrees:</strong> LLB, BBA, BA (Political Science), B.Com</li>
-                  <li><strong>Careers:</strong> Lawyer, Politician, Business Leader, Civil Services, Manager</li>
-                  <li><strong>Exams:</strong> CLAT, UPSC, State PSC, CAT, SSC</li>
-                  <li><strong>Industries:</strong> Law, Government, Business, Politics, NGOs</li>
-                </>
-              )}
-              {recommendedDomain === "Arts/Design" && (
-                <>
-                  <li><strong>Popular Degrees:</strong> BFA, BA (Fine Arts), BJMC, B.Ed, BA (Literature)</li>
-                  <li><strong>Careers:</strong> Artist, Designer, Writer, Teacher, Journalist, Filmmaker</li>
-                  <li><strong>Exams:</strong> NID, NIFT, NET, TET, UPSC (Arts subjects)</li>
-                  <li><strong>Industries:</strong> Media, Education, Design, Arts, Entertainment</li>
-                </>
-              )}
+        {showInstructions ? (
+          <div className="max-w-2xl mx-auto bg-white/80 rounded-2xl shadow-2xl p-8 mb-8 backdrop-blur-lg animate-fade-in">
+            <h3 className="text-2xl font-bold text-[#2386ff] mb-4 text-center">Career Quiz Instructions</h3>
+            <ul className="list-decimal list-inside text-[#1a3c6b] text-lg space-y-3 mb-6">
+              <li><strong>Be Honest</strong> – Answer based on your true interests, skills, and preferences—not what you think is “right.”</li>
+              <li><strong>No Right or Wrong Answers</strong> – This quiz is about discovering your strengths and potential paths, not testing your knowledge.</li>
+              <li><strong>Stay Consistent</strong> – Try not to overthink; go with your first instinct.</li>
+              <li><strong>Complete All Questions</strong> – Skipping questions may affect your results.</li>
+              <li><strong>Confidential & Personalised</strong> – Your answers are private and used only to suggest career directions tailored to you.</li>
+              <li><strong>Results = Guidance, Not Final Decision</strong> – The quiz will suggest career paths, but the final choice is yours.</li>
+              <li>👉 Take your time, enjoy the process, and see what careers align with your personality and skills.</li>
             </ul>
-            <button onClick={() => { setShowResult(false); setCurrentSection(0); setAnswers(Array(allQuestions.length).fill("")); }} className="mt-6 bg-[#2386ff] text-white px-4 py-2 rounded-2xl">Retake Quiz</button>
+            <div className="flex justify-center">
+              <button
+                className="bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white font-bold px-8 py-3 rounded-2xl shadow-lg text-lg hover:scale-105 transition-transform duration-200"
+                onClick={() => setShowInstructions(false)}
+              >
+                Begin Quiz
+              </button>
+            </div>
           </div>
+        ) : (
+          !showResult ? (
+            <form className="flex flex-col gap-8" onSubmit={handleNextSection}>
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold text-[#00bfae] mb-4">{quizSections[currentSection].title} <span className="text-base font-normal text-[#2386ff]">({quizSections[currentSection].questions.length} Qs)</span></h3>
+                {quizSections[currentSection].questions.map((q, qIdx) => {
+                  const globalIdx = getGlobalIdx(currentSection, qIdx);
+                  return (
+                    <div key={globalIdx} className="bg-white/80 rounded-2xl shadow-lg p-6 mb-4">
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="text-lg font-bold text-[#14304a] drop-shadow-sm">Q{globalIdx + 1}. {q.question}</span>
+                        <span className="text-xs text-[#2386ff]">Section {currentSection + 1} of {quizSections.length}</span>
+                      </div>
+                      <div className="flex flex-col gap-3">
+                        {q.options.map((opt, oIdx) => (
+                          <label key={oIdx} className={`flex items-center gap-2 text-base rounded-lg px-2 py-2 cursor-pointer border border-[#c1f2e7] ${answers[globalIdx] === opt.value ? "bg-[#e3eaff] font-bold text-[#14304a]" : "bg-white text-[#14304a] hover:bg-[#f6fcfd]"}`}>
+                            <input
+                              type="radio"
+                              name={`q${globalIdx}`}
+                              value={opt.value}
+                              checked={answers[globalIdx] === opt.value}
+                              onChange={() => handleOption(globalIdx, opt.value)}
+                              required
+                              className="accent-[#2386ff] w-4 h-4"
+                            />
+                            <span className="font-semibold text-[#14304a]">{opt.text}</span>
+                          </label>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="flex justify-between items-center mb-4">
+                {(() => {
+                  // Show cumulative progress for the current section
+                  const total = quizSections.slice(0, currentSection + 1).reduce((acc, sec) => acc + sec.questions.length, 0);
+                  const answered = answers.slice(0, total).filter(a => a).length;
+                  return (
+                    <span className="text-[#2386ff] font-semibold">Progress: {answered} / {total} answered</span>
+                  );
+                })()}
+                <button type="submit" disabled={!isSectionComplete()} className={`bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white font-bold px-6 py-3 rounded-2xl shadow-lg text-lg hover:scale-105 transition-transform duration-200 ${!isSectionComplete() ? "opacity-50 cursor-not-allowed" : ""}`}>{currentSection < quizSections.length - 1 ? "Next Section" : "See My Career Recommendation"}</button>
+              </div>
+            </form>
+          ) : (
+            <div className="bg-white/80 rounded-2xl shadow-lg p-8 mt-8 text-center">
+              <h3 className="text-2xl font-bold text-[#2386ff] mb-4">Recommended Career Domain</h3>
+              <div className="text-xl text-[#1a3c6b] mb-2">{recommendedDomain}</div>
+              <div className="text-[#1a3c6b] mb-4">{domainDescriptions[recommendedDomain]}</div>
+              <h4 className="text-lg font-semibold text-[#2386ff] mb-2">Degree & Career Suggestions:</h4>
+              <ul className="text-left text-[#1a3c6b] list-disc ml-6">
+                {recommendedDomain === "Engineering/Tech" && (
+                  <>
+                    <li><strong>Popular Degrees:</strong> B.Tech, BCA, B.Sc (CS/IT), Diploma in Engineering</li>
+                    <li><strong>Careers:</strong> Engineer, Software Developer, Data Scientist, Robotics, Researcher</li>
+                    <li><strong>Exams:</strong> JEE, GATE, State CET, SSC, UPSC (Engineering Services)</li>
+                    <li><strong>Industries:</strong> Technology, IT, Manufacturing, Research, Government</li>
+                  </>
+                )}
+                {recommendedDomain === "Medicine" && (
+                  <>
+                    <li><strong>Popular Degrees:</strong> MBBS, BDS, B.Pharm, Nursing, B.Sc (Biology)</li>
+                    <li><strong>Careers:</strong> Doctor, Nurse, Pharmacist, Medical Researcher, Therapist</li>
+                    <li><strong>Exams:</strong> NEET, AIIMS, State CET, Nursing Entrance</li>
+                    <li><strong>Industries:</strong> Healthcare, Hospitals, Pharma, Research, Government</li>
+                  </>
+                )}
+                {recommendedDomain === "Law/Politics" && (
+                  <>
+                    <li><strong>Popular Degrees:</strong> LLB, BBA, BA (Political Science), B.Com</li>
+                    <li><strong>Careers:</strong> Lawyer, Politician, Business Leader, Civil Services, Manager</li>
+                    <li><strong>Exams:</strong> CLAT, UPSC, State PSC, CAT, SSC</li>
+                    <li><strong>Industries:</strong> Law, Government, Business, Politics, NGOs</li>
+                  </>
+                )}
+                {recommendedDomain === "Arts/Design" && (
+                  <>
+                    <li><strong>Popular Degrees:</strong> BFA, BA (Fine Arts), BJMC, B.Ed, BA (Literature)</li>
+                    <li><strong>Careers:</strong> Artist, Designer, Writer, Teacher, Journalist, Filmmaker</li>
+                    <li><strong>Exams:</strong> NID, NIFT, NET, TET, UPSC (Arts subjects)</li>
+                    <li><strong>Industries:</strong> Media, Education, Design, Arts, Entertainment</li>
+                  </>
+                )}
+              </ul>
+              <button onClick={() => { setShowResult(false); setCurrentSection(0); setAnswers(Array(allQuestions.length).fill("")); setShowInstructions(true); }} className="mt-6 bg-[#2386ff] text-white px-4 py-2 rounded-2xl">Retake Quiz</button>
+            </div>
+          )
         )}
       </main>
     </div>
