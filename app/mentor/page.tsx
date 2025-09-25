@@ -8,7 +8,7 @@ import { ref, push } from "firebase/database";
 
 
 export default function MentorPage() {
-  type MentorRequest = { id: string; name?: string; email?: string; mobile?: string; mentorshipArea?: string; date?: string; time?: string; message?: string; status?: string; meetingLink?: string; value?: any };
+  type MentorRequest = { id: string; name?: string; email?: string; mobile?: string; mentorshipArea?: string; date?: string; time?: string; message?: string; status?: string; meetingLink?: string; value?: unknown };
   const [myRequests, setMyRequests] = useState<MentorRequest[]>([]);
   const [showRequests, setShowRequests] = useState(false);
   // Fetch user's submitted requests by email
