@@ -42,8 +42,22 @@ export default function MentorPage() {
         // Example: using Firebase Auth
         const { getAuth } = await import("firebase/auth");
         const auth = getAuth();
+        let email = "";
         if (auth.currentUser && typeof auth.currentUser.email === "string") {
-          setForm((prev) => ({ ...prev, email: auth.currentUser.email ?? "" }));
+          email = auth.currentUser.email;
+        }
+        setForm((prev) => ({ ...prev, email }));
+        // Fetch mentor requests after email is set
+        if (email) {
+          const { ref, onValue } = await import("firebase/database");
+          const mentorRef = ref(db, "mentor_requests");
+          onValue(mentorRef, (snapshot) => {
+            const data = snapshot.val() || {};
+            const requests = Object.entries(data)
+              .map(([id, value]) => (typeof value === "object" && value !== null ? { id, ...value } : { id, value }))
+              .filter((req) => req && typeof req === "object" && "email" in req && req.email === email);
+            setMyRequests(requests);
+          });
         }
       } catch {}
     };
@@ -51,12 +65,7 @@ export default function MentorPage() {
   }, []);
 
   // Fetch requests whenever form.email is set
-  useEffect(() => {
-    if (form.email) {
-      fetchMyRequests();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [form.email]);
+  // Removed duplicate fetchMyRequests effect; now handled after email is set
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
