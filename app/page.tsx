@@ -76,21 +76,33 @@ export default function Home() {
 			</div>
 
 	{/* HERO SECTION */}
-	<section className="w-full flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto mt-8 md:mt-16 px-4 animate-fade-in">
-				<div className="flex-1 flex flex-col gap-6">
-						  <h2 className="text-4xl md:text-5xl font-extrabold text-[#2386ff] leading-tight mb-2 animate-slide-in">Find careers that match who you actually are</h2>
-						  <p className="text-[#6b7280] text-lg mb-4 animate-fade-in">AI-assisted guidance, visual roadmaps and college info — reimagined for students.</p>
-						  <div className="flex flex-wrap gap-4 mb-2">
-							<Link href="/features" className="bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200">Explore Features</Link>
-							<Link href="/chatbot" className="bg-gradient-to-r from-[#3ecf8e] to-[#2386ff] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200">Talk to ClaryBot</Link>
-							<Link href="/mentor" className="bg-gradient-to-r from-[#00bfae] to-[#2386ff] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200">Connect with our Mentor</Link>
-						</div>
-									<div className="flex flex-wrap gap-4">
-										<Link href="/career-compare" className="bg-white text-[#2386ff] px-4 py-2 rounded-full font-medium shadow hover:scale-105 transition-transform duration-200">Career Comparison Tool</Link>
-										<Link href="/quiz" className="bg-white text-[#2386ff] px-4 py-2 rounded-full font-medium shadow hover:scale-105 transition-transform duration-200">Career Quiz</Link>
-										<Link href="/courses" className="bg-white text-[#2386ff] px-4 py-2 rounded-full font-medium shadow hover:scale-105 transition-transform duration-200">Course Hub</Link>
-						</div>
-					</div>
+		<section className="w-full flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto mt-8 md:mt-16 px-4 animate-fade-in">
+			<div className="flex-1 flex flex-col gap-6">
+				<h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#2386ff] via-[#00bfae] to-[#8D44FF] leading-tight mb-2 animate-slide-in">Find careers that match who you actually are</h2>
+				<p className="text-[#6b7280] text-lg mb-4 animate-fade-in">AI-assisted guidance, visual roadmaps and college info — reimagined for students.</p>
+				<div className="flex flex-wrap gap-4 mb-2">
+					<Link href="/features" className="bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 flex items-center gap-2">
+						<span className="text-xl">✨</span> Explore Features
+					</Link>
+					<Link href="/chatbot" className="bg-gradient-to-r from-[#3ecf8e] to-[#2386ff] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 flex items-center gap-2">
+						<span className="text-xl">🤖</span> Talk to ClaryBot
+					</Link>
+					<Link href="/mentor" className="bg-gradient-to-r from-[#00bfae] to-[#2386ff] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 flex items-center gap-2">
+						<span className="text-xl">🧑‍🏫</span> Connect with our Mentor
+					</Link>
+				</div>
+				<div className="flex flex-wrap gap-4">
+					<Link href="/compare" className="bg-white text-[#2386ff] px-4 py-2 rounded-full font-medium shadow hover:scale-105 transition-transform duration-200 flex items-center gap-2">
+						<span className="text-xl">⚖️</span> Career Comparison Tool
+					</Link>
+					<Link href="/quiz" className="bg-white text-[#2386ff] px-4 py-2 rounded-full font-medium shadow hover:scale-105 transition-transform duration-200 flex items-center gap-2">
+						<span className="text-xl">🎯</span> Career Quiz
+					</Link>
+					<Link href="/courses" className="bg-white text-[#2386ff] px-4 py-2 rounded-full font-medium shadow hover:scale-105 transition-transform duration-200 flex items-center gap-2">
+						<span className="text-xl">🏫</span> Course Hub
+					</Link>
+				</div>
+			</div>
 							<div className="flex-1 flex justify-center items-center mt-10 md:mt-0">
 								<div className="relative w-72 h-72 md:w-96 md:h-96 animate-fade-in">
 									<div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#e0f7fa] via-[#e3eaff] to-[#c1f2e7] blur-2xl opacity-80 animate-pulse"></div>
@@ -120,25 +132,6 @@ export default function Home() {
 							</div>
 				</section>
 
-				{/* Why ClaryGuide Section */}
-						<section className="w-full max-w-6xl mx-auto mt-16 px-4 animate-fade-in">
-							<h3 className="text-4xl font-extrabold text-[#2386ff] mb-8 animate-slide-in">Why ClaryGuide?</h3>
-											<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-												<div className="bg-gradient-to-br from-[#e0f7fa] to-[#e3eaff] rounded-2xl shadow-lg p-8 flex flex-col gap-2 hover:scale-105 transition-transform duration-200 animate-fade-in">
-													<h4 className="font-bold text-lg text-[#2386ff]">Personalized</h4>
-													<p className="text-[#1a3c6b]">Tailored suggestions from simple inputs.</p>
-												</div>
-												<div className="bg-gradient-to-br from-[#c1f2e7] to-[#e3eaff] rounded-2xl shadow-lg p-8 flex flex-col gap-2 hover:scale-105 transition-transform duration-200 animate-fade-in">
-													<h4 className="font-bold text-lg text-[#00bfae]">Visual Roadmaps</h4>
-													<p className="text-[#1a3c6b]">Step-by-step timelines to reach a career.</p>
-												</div>
-												<div className="bg-gradient-to-br from-[#e3eaff] to-[#f7fdfc] rounded-2xl shadow-lg p-8 flex flex-col gap-2 hover:scale-105 transition-transform duration-200 animate-fade-in">
-													<h4 className="font-bold text-lg text-[#8D44FF]">College Hub</h4>
-													<p className="text-[#1a3c6b]">Search colleges & deadlines in one place.</p>
-												</div>
-											</div>
-						</section>
-
 				{/* CTA strip */}
 						<section className="w-full py-10 text-center bg-gradient-to-r from-[#f7fdfc] via-[#e3eaff] to-[#c1f2e7] mt-16 animate-fade-in">
 							<div className="cta-inner">
@@ -146,6 +139,35 @@ export default function Home() {
 								<Link className="bg-gradient-to-r from-[#3ecf8e] to-[#2386ff] text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 text-xl animate-fade-in" href="/features">Start Now</Link>
 							</div>
 						</section>
+
+		{/* Why ClaryGuide Section */}
+		<section className="w-full max-w-6xl mx-auto mt-16 px-4 animate-fade-in">
+			<h3 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#2386ff] via-[#00bfae] to-[#8D44FF] mb-8 animate-slide-in">Why ClaryGuide?</h3>
+			<div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+				<div className="bg-gradient-to-br from-[#e0f7fa] via-[#e3eaff] to-[#43e97b] rounded-3xl shadow-2xl p-8 flex flex-col gap-2 hover:scale-105 transition-transform duration-200 animate-fade-in">
+					<div className="flex items-center gap-2 mb-2">
+						<span className="text-2xl">✨</span>
+						<h4 className="font-bold text-lg text-[#2386ff]">Personalized</h4>
+					</div>
+					<p className="text-[#1a3c6b]">Tailored suggestions from simple inputs.</p>
+				</div>
+				<div className="bg-gradient-to-br from-[#c1f2e7] via-[#e3eaff] to-[#00bfae] rounded-3xl shadow-2xl p-8 flex flex-col gap-2 hover:scale-105 transition-transform duration-200 animate-fade-in">
+					<div className="flex items-center gap-2 mb-2">
+						<span className="text-2xl">🛤️</span>
+						<h4 className="font-bold text-lg text-[#00bfae]">Visual Roadmaps</h4>
+					</div>
+					<p className="text-[#1a3c6b]">Step-by-step timelines to reach a career.</p>
+				</div>
+				<div className="bg-gradient-to-br from-[#e3eaff] via-[#f7fdfc] to-[#8D44FF] rounded-3xl shadow-2xl p-8 flex flex-col gap-2 hover:scale-105 transition-transform duration-200 animate-fade-in">
+					<div className="flex items-center gap-2 mb-2">
+						<span className="text-2xl">🏫</span>
+						<h4 className="font-bold text-lg text-[#8D44FF]">College Hub</h4>
+					</div>
+					<p className="text-[#1a3c6b]">Search colleges & deadlines in one place.</p>
+				</div>
+			</div>
+		</section>
+
 
 				{/* Floating Chatbot */}
 				<button id="botBtn" className="fixed bottom-6 right-6 bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white rounded-full p-4 shadow-lg text-2xl hover:scale-110 transition-transform duration-200 animate-fade-in" aria-label="Open chat">💬</button>

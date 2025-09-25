@@ -5,12 +5,12 @@ import Navbar from "../../components/Navbar";
 import { usePathname } from "next/navigation";
 
 const team = [
-  { name: "add your name", role: "Founder & CEO", img: "/logo-favicon.png" },
-  { name: "Aarya Sharma", role: "CTO", img: "/logo-favicon.png" },
-  { name: "Riya Patel", role: "Lead Designer", img: "/logo-favicon.png" },
-  { name: "Karan Singh", role: "Product Manager", img: "/logo-favicon.png" },
-  { name: "Priya Mehra", role: "AI Engineer", img: "/logo-favicon.png" },
-  { name: "Aditya Verma", role: "Frontend Developer", img: "/logo-favicon.png" },
+  { name: "Krishna Saxena",  img: "/Krishna Saxena.jpg" },
+  { name: "Latesh Kumar",  img: "/Latesh Kumar.jpg" },
+  { name: "Bahubali Nalte",  img: "/Bahubali Nalte.jpg" },
+  { name: "Puneet Sen", img: "/Puneet Sen.jpg" },
+  { name: "Priya Mehra", img: "/logo-favicon.png" },
+  { name: "Aditya Verma",  img: "/logo-favicon.png" },
 ];
 
 export default function About() {
@@ -76,7 +76,7 @@ export default function About() {
             <div key={idx} className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center gap-2 hover:scale-105 transition-transform duration-200">
               <Image src={member.img} alt={member.name} width={64} height={64} className="rounded-full mb-2" />
               <h4 className="font-bold text-lg text-[#2386ff]">{member.name}</h4>
-              <p className="text-[#1a3c6b]">{member.role}</p>
+
             </div>
           ))}
         </div>
