@@ -50,52 +50,52 @@ export default function Features() {
         <h2 className="text-4xl font-extrabold text-[#2386ff] mb-8 text-center">Website Features</h2>
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 py-2">
           {/* Career Path */}
-          <Link href="/career-paths" className="bg-gradient-to-br from-[#43e97b] via-[#38f9d7] to-[#e3eaff] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
+          <Link href="/career-paths" className="bg-gradient-to-br from-[#0fefb2] via-[#00bfae] to-[#2386ff] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
             <div className="flex items-center gap-4 mb-2">
-              <span className="text-4xl">🛤️</span>
-              <h3 className="text-2xl font-extrabold text-[#2386ff] group-hover:text-[#43e97b] transition-colors duration-200">Career Path</h3>
+              <span className="text-4xl text-white drop-shadow">🛤️</span>
+              <h3 className="text-2xl font-extrabold text-white group-hover:text-[#0fefb2] transition-colors duration-200 drop-shadow">Career Path</h3>
             </div>
-            <p className="text-[#1a3c6b] text-lg">Explore step-by-step career roadmaps and visualize your journey to your dream profession.</p>
+            <p className="text-white text-lg drop-shadow">Explore step-by-step career roadmaps and visualize your journey to your dream profession.</p>
           </Link>
           {/* Chatbot */}
-          <Link href="/chatbot" className="bg-gradient-to-br from-[#e0c3fc] via-[#8ec5fc] to-[#e3eaff] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
+          <Link href="/chatbot" className="bg-gradient-to-br from-[#8D44FF] via-[#2386ff] to-[#00bfae] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
             <div className="flex items-center gap-4 mb-2">
-              <span className="text-4xl">🤖</span>
-              <h3 className="text-2xl font-extrabold text-[#8D44FF] group-hover:text-[#00bfae] transition-colors duration-200">ClaryBot (Chatbot)</h3>
+              <span className="text-4xl text-white drop-shadow">🤖</span>
+              <h3 className="text-2xl font-extrabold text-white group-hover:text-[#8D44FF] transition-colors duration-200 drop-shadow">ClaryBot (Chatbot)</h3>
             </div>
-            <p className="text-[#1a3c6b] text-lg">Get instant answers, career advice, and personalized guidance from our AI-powered chatbot.</p>
+            <p className="text-white text-lg drop-shadow">Get instant answers, career advice, and personalized guidance from our AI-powered chatbot.</p>
           </Link>
           {/* Compare */}
-          <Link href="/compare" className="bg-gradient-to-br from-[#43cea2] via-[#185a9d] to-[#e3eaff] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
+          <Link href="/compare" className="bg-gradient-to-br from-[#185a9d] via-[#43cea2] to-[#00bfae] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
             <div className="flex items-center gap-4 mb-2">
-              <span className="text-4xl">⚖️</span>
-              <h3 className="text-2xl font-extrabold text-[#185a9d] group-hover:text-[#43cea2] transition-colors duration-200">Compare Degrees</h3>
+              <span className="text-4xl text-white drop-shadow">⚖️</span>
+              <h3 className="text-2xl font-extrabold text-white group-hover:text-[#43cea2] transition-colors duration-200 drop-shadow">Compare Degrees</h3>
             </div>
-            <p className="text-[#1a3c6b] text-lg">Compare different degrees, career paths, and growth opportunities to find your best fit.</p>
+            <p className="text-white text-lg drop-shadow">Compare different degrees, career paths, and growth opportunities to find your best fit.</p>
           </Link>
           {/* Mentor */}
-          <Link href="/mentor" className="bg-gradient-to-br from-[#f7971e] via-[#ffd200] to-[#e3eaff] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
+          <Link href="/mentor" className="bg-gradient-to-br from-[#ffd200] via-[#f7971e] to-[#ff5858] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
             <div className="flex items-center gap-4 mb-2">
-              <span className="text-4xl">🧑‍🏫</span>
-              <h3 className="text-2xl font-extrabold text-[#f7971e] group-hover:text-[#ffd200] transition-colors duration-200">Mentor Connect</h3>
+              <span className="text-4xl text-white drop-shadow">🧑‍🏫</span>
+              <h3 className="text-2xl font-extrabold text-white group-hover:text-[#ffd200] transition-colors duration-200 drop-shadow">Mentor Connect</h3>
             </div>
-            <p className="text-[#1a3c6b] text-lg">Connect with experienced mentors for guidance, advice, and support throughout your career journey.</p>
+            <p className="text-white text-lg drop-shadow">Connect with experienced mentors for guidance, advice, and support throughout your career journey.</p>
           </Link>
           {/* Quiz */}
-          <Link href="/quiz" className="bg-gradient-to-br from-[#f857a6] via-[#ff5858] to-[#e3eaff] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
+          <Link href="/quiz" className="bg-gradient-to-br from-[#ff5858] via-[#f857a6] to-[#ffd200] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
             <div className="flex items-center gap-4 mb-2">
-              <span className="text-4xl">🎯</span>
-              <h3 className="text-2xl font-extrabold text-[#f857a6] group-hover:text-[#ff5858] transition-colors duration-200">Career Quiz</h3>
+              <span className="text-4xl text-white drop-shadow">🎯</span>
+              <h3 className="text-2xl font-extrabold text-white group-hover:text-[#ff5858] transition-colors duration-200 drop-shadow">Career Quiz</h3>
             </div>
-            <p className="text-[#1a3c6b] text-lg">Take a fun and interactive quiz to discover careers that match your personality and skills.</p>
+            <p className="text-white text-lg drop-shadow">Take a fun and interactive quiz to discover careers that match your personality and skills.</p>
           </Link>
           {/* College Hub */}
-          <Link href="/college-hub" className="bg-gradient-to-br from-[#30cfd0] via-[#330867] to-[#e3eaff] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
+          <Link href="/college-hub" className="bg-gradient-to-br from-[#330867] via-[#30cfd0] to-[#00bfae] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
             <div className="flex items-center gap-4 mb-2">
-              <span className="text-4xl">🏫</span>
-              <h3 className="text-2xl font-extrabold text-[#330867] group-hover:text-[#30cfd0] transition-colors duration-200">College Hub</h3>
+              <span className="text-4xl text-white drop-shadow">🏫</span>
+              <h3 className="text-2xl font-extrabold text-white group-hover:text-[#30cfd0] transition-colors duration-200 drop-shadow">College Hub</h3>
             </div>
-            <p className="text-[#1a3c6b] text-lg">Search colleges, view deadlines, and access all the information you need to make informed decisions about your education.</p>
+            <p className="text-white text-lg drop-shadow">Search colleges, view deadlines, and access all the information you need to make informed decisions about your education.</p>
           </Link>
         </div>
       </main>

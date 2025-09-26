@@ -69,7 +69,7 @@ export default function CareerChatbot() {
 				<div className="max-w-xl w-full mx-auto bg-white/80 rounded-2xl shadow-2xl p-6 backdrop-blur-lg">
 					<div className="flex items-center gap-3 mb-2">
 						<Image src="/logo-favicon.png" alt="ClaryBot" width={36} height={36} className="rounded-full" />
-						<h2 className="text-2xl font-bold text-[#2386ff]">AI-Powered Career Chatbot</h2>
+						<h2 className="text-2xl font-bold text-[#2386ff]">AI-Powered Career ClayBot</h2>
 					</div>
 					<p className="text-[#1a3c6b] text-center mb-4">Ask about degrees, exams, colleges, careers. Works offline with preloaded FAQs!</p>
 					<div className="h-80 overflow-y-auto flex flex-col gap-2 mb-4 px-2" style={{ background: "#f6fcfd", borderRadius: "1rem" }}>

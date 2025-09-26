@@ -9,7 +9,7 @@ const team = [
   { name: "Latesh Kumar",  img: "/Latesh Kumar.jpg" },
   { name: "Bahubali Nalte",  img: "/Bahubali Nalte.jpg" },
   { name: "Puneet Sen", img: "/Puneet Sen.jpg" },
-  { name: "Priya Mehra", img: "/logo-favicon.png" },
+  { name: "Riya", img: "/Riya.jpg" },
   { name: "Aditya Verma",  img: "/logo-favicon.png" },
 ];
 

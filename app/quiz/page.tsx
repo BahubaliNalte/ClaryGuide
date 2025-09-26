@@ -498,7 +498,7 @@ export default function QuizPage() {
         <h2 className="text-3xl font-bold text-[#2386ff] mb-6 text-center">Career Guidance Quiz</h2>
         {showInstructions ? (
           <div className="max-w-2xl mx-auto bg-white/80 rounded-2xl shadow-2xl p-8 mb-8 backdrop-blur-lg animate-fade-in">
-            <h3 className="text-2xl font-bold text-[#2386ff] mb-4 text-center">Career Quiz Instructions</h3>
+            <h3 className="text-2xl font-bold text-[#2386ff] mb-4 text-center">Career Quiz Instructions!</h3>
             <ul className="list-decimal list-inside text-[#1a3c6b] text-lg space-y-3 mb-6">
               <li><strong>Be Honest</strong> – Answer based on your true interests, skills, and preferences—not what you think is “right.”</li>
               <li><strong>No Right or Wrong Answers</strong> – This quiz is about discovering your strengths and potential paths, not testing your knowledge.</li>

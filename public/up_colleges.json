@@ -1,0 +1,6759 @@
+{
+  "Agra": {
+    "Government": [
+      {
+        "Name": "Dr. Bhimrao Ambedkar University (DBRAU), Agra",
+        "Approvals": [
+          "UGC",
+          "NAAC"
+        ],
+        "StudentRating": 4.0,
+        "Location": "Agra",
+        "Website": "https://dbrau.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1927,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Sc",
+            "Specialization": "Physics/Chemistry/Maths",
+            "FeePerSemester": null
+          },
+          {
+            "CourseName": "B.Ed",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Dayal Bagh Educational Institute (DBEI), Agra",
+        "Approvals": [
+          "UGC",
+          "NAAC"
+        ],
+        "StudentRating": 4.1,
+        "Location": "Agra",
+        "Website": "https://www.dbei.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1917,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "CSE/Mechanical",
+            "FeePerSemester": null
+          },
+          {
+            "CourseName": "B.Sc",
+            "Specialization": "Life Sciences",
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "St. John's College, Agra",
+        "Approvals": [
+          "State University Affiliation"
+        ],
+        "StudentRating": 3.7,
+        "Location": "Agra",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 1990,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.A.",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Agra College (Aided)",
+        "Approvals": [
+          "State University Affiliation"
+        ],
+        "StudentRating": 3.8,
+        "Location": "Agra",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 1823,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Com",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Institute of Engineering & Technology, DBRAU (Agra)",
+        "Approvals": [
+          "AICTE",
+          "UGC"
+        ],
+        "StudentRating": 3.9,
+        "Location": "Agra",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 2014,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "CSE/Electrical",
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Aligarh": {
+    "Government": [
+      {
+        "Name": "Aligarh Muslim University (AMU)",
+        "Approvals": [
+          "UGC",
+          "NAAC A+"
+        ],
+        "StudentRating": 4.5,
+        "Location": "Aligarh",
+        "Website": "https://www.amu.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1875,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Sc",
+            "Specialization": "Maths/Physics/Chemistry",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Women’s College, Aligarh (AMU Constituent)",
+        "Approvals": [
+          "UGC"
+        ],
+        "StudentRating": 4.0,
+        "Location": "Aligarh",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 1920,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.A.",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "SHUATS-affiliated private institutes (examples)",
+        "Approvals": [
+          "UGC"
+        ],
+        "StudentRating": 3.2,
+        "Location": "Aligarh",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "BBA",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Sir Syed College (Private/Affiliated)",
+        "Approvals": [
+          "State University Affiliation"
+        ],
+        "StudentRating": 3.4,
+        "Location": "Aligarh",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 1950,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Com",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Mohammedan Anglo-Oriental College (example affiliated)",
+        "Approvals": [
+          "State University Affiliation"
+        ],
+        "StudentRating": 3.1,
+        "Location": "Aligarh",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 1900,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Sc",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Ambedkar Nagar": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Amethi": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Amroha": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Auraiya": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Ayodhya": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Azamgarh": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Baghpat": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Bahraich": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Ballia": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Balrampur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Banda": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Barabanki": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Bareilly": {
+    "Government": [
+      {
+        "Name": "Mahatma Jyotiba Phule Rohilkhand University (MJPRU), Bareilly",
+        "Approvals": [
+          "UGC",
+          "NAAC B"
+        ],
+        "StudentRating": 3.6,
+        "Location": "Bareilly",
+        "Website": "https://www.mjpru.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1975,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Sc",
+            "Specialization": "Zoology/Botany",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Bareilly College (Govt-aided)",
+        "Approvals": [
+          "State University Affiliation"
+        ],
+        "StudentRating": 3.9,
+        "Location": "Bareilly",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 1837,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Com",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "Invertis University, Bareilly",
+        "Approvals": [
+          "UGC",
+          "NAAC B"
+        ],
+        "StudentRating": 3.7,
+        "Location": "Bareilly",
+        "Website": "https://www.invertisuniversity.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1998,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "CSE",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "SRMS Trust Institutions (Bareilly region)",
+        "Approvals": [
+          "AICTE"
+        ],
+        "StudentRating": 3.4,
+        "Location": "Bareilly",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 2002,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "Various",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Bareilly Private Engineering College (example)",
+        "Approvals": [
+          "AICTE"
+        ],
+        "StudentRating": 3.1,
+        "Location": "Bareilly",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "Diploma",
+            "Specialization": "Engineering",
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Basti": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Bhadohi": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Bijnor": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Budaun": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Bulandshahr": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Chandauli": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Chitrakoot": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Deoria": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Etah": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Etawah": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Farrukhabad": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Fatehpur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Firozabad": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Gautam Buddha Nagar": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Ghaziabad": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Gonda": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Gorakhpur": {
+    "Government": [
+      {
+        "Name": "Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur",
+        "Approvals": [
+          "UGC",
+          "AICTE",
+          "NAAC A"
+        ],
+        "StudentRating": 4.1,
+        "Location": "Gorakhpur",
+        "Website": "https://www.mmmut.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 2013,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "Mechanical/CSE",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Deen Dayal Upadhyay Gorakhpur University (DDU)",
+        "Approvals": [
+          "UGC",
+          "NAAC B"
+        ],
+        "StudentRating": 3.5,
+        "Location": "Gorakhpur",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 1956,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Sc",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "BRD Medical College affiliated institutes (private)",
+        "Approvals": [
+          "NMC"
+        ],
+        "StudentRating": 3.7,
+        "Location": "Gorakhpur",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 1960,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "MBBS",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Gorakhpur Private Institute (example)",
+        "Approvals": [
+          "State"
+        ],
+        "StudentRating": 3.0,
+        "Location": "Gorakhpur",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "BBA",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Regional Polytechnic/Engineering Colleges (example)",
+        "Approvals": [
+          "AICTE"
+        ],
+        "StudentRating": 3.2,
+        "Location": "Gorakhpur",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "Diploma",
+            "Specialization": "Various",
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Hamirpur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Hapur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Hardoi": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Hathras": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Jalaun": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Jaunpur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Jhansi": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Kannauj": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Kanpur Dehat": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Kanpur Nagar": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Kasganj": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Kaushambi": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Kushinagar": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Lalitpur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Lucknow": {
+    "Government": [
+      {
+        "Name": "University of Lucknow",
+        "Approvals": [
+          "UGC",
+          "NAAC A"
+        ],
+        "StudentRating": 4.0,
+        "Location": "Lucknow",
+        "Website": "https://www.lkouniv.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1920,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.A.",
+            "Specialization": "Economics/Pol.Sc",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "King George's Medical University (KGMU)",
+        "Approvals": [
+          "NMC",
+          "UGC"
+        ],
+        "StudentRating": 4.4,
+        "Location": "Lucknow",
+        "Website": "https://www.kgmu.org/",
+        "ContactPhone": null,
+        "EstablishedYear": 1911,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "MBBS",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "Jaipuria Institute of Management, Lucknow",
+        "Approvals": [
+          "AICTE",
+          "NAAC"
+        ],
+        "StudentRating": 4.2,
+        "Location": "Lucknow",
+        "Website": "https://www.jaipuria.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1995,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "MBA",
+            "Specialization": "Marketing/Finance",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Babu Banarasi Das University (BBDU)",
+        "Approvals": [
+          "UGC",
+          "NAAC"
+        ],
+        "StudentRating": 3.9,
+        "Location": "Lucknow",
+        "Website": "https://www.bbdu.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 2010,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "CSE",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Integral University, Lucknow",
+        "Approvals": [
+          "UGC",
+          "NAAC"
+        ],
+        "StudentRating": 3.8,
+        "Location": "Lucknow",
+        "Website": "https://www.integraluniversity.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 2004,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "Various",
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Maharajganj": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Mahoba": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Mainpuri": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Mathura": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Mau": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Meerut": {
+    "Government": [
+      {
+        "Name": "Chaudhary Charan Singh University (CCSU), Meerut",
+        "Approvals": [
+          "UGC",
+          "NAAC A"
+        ],
+        "StudentRating": 4.2,
+        "Location": "Meerut",
+        "Website": "https://www.ccsuniversity.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1965,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Sc",
+            "Specialization": "Various",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Government Degree College, Meerut (example)",
+        "Approvals": [
+          "State"
+        ],
+        "StudentRating": 3.3,
+        "Location": "Meerut",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 1970,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Ed",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "Gautam Buddha University",
+        "Approvals": [
+          "UGC",
+          "NAAC A"
+        ],
+        "StudentRating": 3.8,
+        "Location": "Greater Noida/Meerut region",
+        "Website": "https://www.gbu.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 2008,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "CSE/IT",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Shobhit University (Meerut)",
+        "Approvals": [
+          "UGC",
+          "NAAC"
+        ],
+        "StudentRating": 3.6,
+        "Location": "Meerut",
+        "Website": "https://www.shobhituniversity.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 2006,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "Various",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Meerut Private Institute (example)",
+        "Approvals": [
+          "AICTE"
+        ],
+        "StudentRating": 3.0,
+        "Location": "Meerut",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "BBA",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Mirzapur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Moradabad": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Muzaffarnagar": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Pilibhit": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Pratapgarh": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Prayagraj": {
+    "Government": [
+      {
+        "Name": "University of Allahabad (Prayagraj)",
+        "Approvals": [
+          "UGC",
+          "NAAC A"
+        ],
+        "StudentRating": 4.1,
+        "Location": "Prayagraj",
+        "Website": "https://www.allduniv.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1887,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.A",
+            "Specialization": "History/Pol.Sc",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Motilal Nehru National Institute of Technology (MNNIT), Allahabad",
+        "Approvals": [
+          "UGC (Deemed)",
+          "AICTE"
+        ],
+        "StudentRating": 4.4,
+        "Location": "Prayagraj",
+        "Website": "https://www.mnnit.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1961,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "CSE/ECE/Mechanical",
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "Sam Higginbottom University of Agriculture, Technology and Sciences (SHUATS)",
+        "Approvals": [
+          "UGC (Deemed)",
+          "NAAC A"
+        ],
+        "StudentRating": 4.0,
+        "Location": "Prayagraj",
+        "Website": "https://www.shuats.edu.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1910,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Sc Agriculture",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Prayagraj Private Institute (example)",
+        "Approvals": [
+          "State"
+        ],
+        "StudentRating": 3.1,
+        "Location": "Prayagraj",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "BBA",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Regional Medical/Tech Colleges (examples)",
+        "Approvals": [
+          "NMC",
+          "AICTE"
+        ],
+        "StudentRating": 3.5,
+        "Location": "Prayagraj",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "MBBS",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Raebareli": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Rampur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Saharanpur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Sambhal": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Sant Kabir Nagar": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Shahjahanpur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Shamli": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Shravasti": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Siddharthnagar": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Sitapur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Sonbhadra": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Sultanpur": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Unnao": {
+    "Government": [
+      {
+        "Name": "TBD Government College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Government College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "TBD Private College/University",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 2",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "TBD Private College/University 3",
+        "Approvals": [],
+        "StudentRating": null,
+        "Location": null,
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "TBD",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  },
+  "Varanasi": {
+    "Government": [
+      {
+        "Name": "Banaras Hindu University (BHU)",
+        "Approvals": [
+          "UGC",
+          "NAAC A++"
+        ],
+        "StudentRating": 4.6,
+        "Location": "Varanasi",
+        "Website": "https://www.bhu.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 1916,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Sc",
+            "Specialization": "Biology/Physics/Maths",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Institute of Medical Sciences, BHU (IMS-BHU)",
+        "Approvals": [
+          "NMC",
+          "UGC"
+        ],
+        "StudentRating": 4.3,
+        "Location": "Varanasi",
+        "Website": "https://www.bhu.ac.in/ims/",
+        "ContactPhone": null,
+        "EstablishedYear": 1960,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "MBBS",
+            "Specialization": null,
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ],
+    "Private": [
+      {
+        "Name": "Madan Mohan Malaviya University of Technology (MMMUT) - Gorakhpur (serves region)",
+        "Approvals": [
+          "UGC",
+          "AICTE"
+        ],
+        "StudentRating": 4.0,
+        "Location": "Gorakhpur",
+        "Website": "https://www.mmmut.ac.in/",
+        "ContactPhone": null,
+        "EstablishedYear": 2013,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "Computer Science",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Institute of Management Studies (BHU) - IMS",
+        "Approvals": [
+          "UGC"
+        ],
+        "StudentRating": 4.0,
+        "Location": "Varanasi",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": 1995,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "MBA",
+            "Specialization": "Management",
+            "FeePerSemester": null
+          }
+        ]
+      },
+      {
+        "Name": "Regional Private Engineering Colleges (examples)",
+        "Approvals": [
+          "AICTE"
+        ],
+        "StudentRating": 3.2,
+        "Location": "Varanasi",
+        "Website": null,
+        "ContactPhone": null,
+        "EstablishedYear": null,
+        "NumberOfSeats": null,
+        "Courses": [
+          {
+            "CourseName": "B.Tech",
+            "Specialization": "Various",
+            "FeePerSemester": null
+          }
+        ]
+      }
+    ]
+  }
+}
