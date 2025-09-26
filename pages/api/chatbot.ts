@@ -53,8 +53,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 				res.status(500).json({ error: errMsg || 'Failed to connect to Gemini AI.' });
 			}
 		}
-	} catch (error: any) {
-        console.error('Gemini API error:', error);
-        res.status(500).json({ error: error.message || 'Failed to connect to AI.' });
+	} catch (error: unknown) {
+		const errMsg = typeof error === 'object' && error !== null && 'message' in error
+			? (error as { message?: string }).message
+			: String(error);
+		console.error('Gemini API error:', error);
+		res.status(500).json({ error: errMsg || 'Failed to connect to AI.' });
 	}
 }
