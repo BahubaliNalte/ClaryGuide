@@ -148,31 +148,41 @@ export default function MentorPage() {
                       <option value="Other">Other</option>
                     </select>
                     <textarea name="message" placeholder="Your Message" value={form.message} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
-                    <input
-                      name="date"
-                      type="date"
-                      value={form.date}
-                      onChange={handleChange}
-                      required
-                      min={new Date().toISOString().split("T")[0]}
-                      max={(() => {
-                        const d = new Date();
-                        d.setMonth(d.getMonth() + 1);
-                        return d.toISOString().split("T")[0];
-                      })()}
-                      className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]"
-                    />
-                    <input
-                      name="time"
-                      type="time"
-                      value={form.time}
-                      onChange={handleChange}
-                      required
-                      min="07:00"
-                      max="22:00"
-                      step="900"
-                      className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]"
-                    />
+                    <div className="flex flex-col gap-2">
+                      <label htmlFor="date" className="text-[#2386ff] font-semibold text-base mb-1">Select Date</label>
+                      <input
+                        id="date"
+                        name="date"
+                        type="date"
+                        value={form.date}
+                        onChange={handleChange}
+                        required
+                        min={new Date().toISOString().split("T")[0]}
+                        max={(() => {
+                          const d = new Date();
+                          d.setMonth(d.getMonth() + 1);
+                          return d.toISOString().split("T")[0];
+                        })()}
+                        className="border border-[#2386ff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b] bg-white placeholder-[#2386ff] focus:ring-2 focus:ring-[#2386ff]"
+                        placeholder="Select Date"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <label htmlFor="time" className="text-[#2386ff] font-semibold text-base mb-1">Select Time</label>
+                      <input
+                        id="time"
+                        name="time"
+                        type="time"
+                        value={form.time}
+                        onChange={handleChange}
+                        required
+                        min="07:00"
+                        max="22:00"
+                        step="900"
+                        className="border border-[#2386ff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b] bg-white placeholder-[#2386ff] focus:ring-2 focus:ring-[#2386ff]"
+                        placeholder="Select Time"
+                      />
+                    </div>
                     {error && <div className="text-red-500 text-sm text-center">{error}</div>}
                     {success && <div className="text-green-600 text-sm text-center">{success}</div>}
                     <button type="submit" disabled={loading} className="bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white font-bold px-6 py-3 rounded-2xl shadow-lg text-lg hover:scale-105 transition-transform duration-200">{loading ? "Submitting..." : "Book Session"}</button>
