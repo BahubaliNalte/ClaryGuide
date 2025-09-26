@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 interface College {
@@ -11,7 +11,9 @@ interface College {
   EstablishedYear?: number;
   Approvals?: string[];
   Courses?: { CourseName: string; Specialization?: string; FeePerSemester?: string | null }[];
-  [key: string]: any;
+  _city?: string;
+  _type?: keyof CityColleges;
+  // Removed invalid index signature. Explicitly declare extra properties below.
 }
 
 interface CityColleges {
