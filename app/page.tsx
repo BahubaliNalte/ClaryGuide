@@ -135,7 +135,7 @@ export default function Home() {
 				{/* CTA strip */}
 						<section className="w-full py-10 text-center bg-gradient-to-r from-[#f7fdfc] via-[#e3eaff] to-[#c1f2e7] mt-16 animate-fade-in">
 							<div className="cta-inner">
-								<h4 className="text-2xl text-[#00bfae] font-bold mb-4 animate-slide-in">Ready to explore?</h4>
+								<h4 className="text-2xl text-[#00bfae] font-bold mb-4 animate-slide-in">Ready to explore features?</h4>
 								<Link className="bg-gradient-to-r from-[#3ecf8e] to-[#2386ff] text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 text-xl animate-fade-in" href="/features">Start Now</Link>
 							</div>
 						</section>
@@ -166,11 +166,17 @@ export default function Home() {
 					<p className="text-[#1a3c6b]">Search colleges & deadlines in one place.</p>
 				</div>
 			</div>
-		</section>
-
-
-				{/* Floating Chatbot */}
-				<button id="botBtn" className="fixed bottom-6 right-6 bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white rounded-full p-4 shadow-lg text-2xl hover:scale-110 transition-transform duration-200 animate-fade-in" aria-label="Open chat">💬</button>
+			</section>
+			
+		{/* Floating Chatbot */}
+		<Link
+			id="botBtn"
+			href="/chatbot"
+			className="fixed bottom-6 right-6 bg-gradient-to-r from-[#2386ff] to-[#00bfae] text-white rounded-full p-4 shadow-lg text-2xl hover:scale-110 transition-transform duration-200 animate-fade-in"
+			aria-label="Open chat"
+		>
+			💬
+		</Link>
 
 				{/* Footer */}
 									<footer className="bg-gradient-to-r from-[#f7fdfc] via-[#e3eaff] to-[#c1f2e7] text-[#6b7280] py-8 text-base mt-16 border-t border-[#e0e7ef] animate-fade-in">
