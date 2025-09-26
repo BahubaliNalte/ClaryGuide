@@ -435,12 +435,6 @@ const quizSections = [
   },
 ];
 
-const streamDescriptions: Record<string, string> = {
-  Science: "Best for students interested in research, technology, medicine, and engineering.",
-  Arts: "Ideal for creative, communicative, and analytical minds interested in humanities, languages, and social sciences.",
-  Commerce: "Great for those interested in business, finance, economics, and entrepreneurship.",
-  Vocational: "Perfect for practical learners who want skill-based careers in IT, design, or technical fields.",
-};
 
 
 const domainDescriptions: Record<string, string> = {

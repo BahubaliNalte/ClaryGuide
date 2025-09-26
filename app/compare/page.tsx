@@ -11,11 +11,6 @@ type Degree = {
   industries: string[];
 };
 
-type Category = {
-  name: string;
-  icon: string;
-  degrees: string[];
-};
 
 const degrees = [
   { name: "B.A.", description: "Bachelor of Arts - Humanities, languages, social sciences.", careers: ["Teacher", "Journalist", "Civil Services", "Writer", "Lawyer", "Social Worker"], exams: ["UPSC", "NET", "SSC", "State PSC", "TET"], higherStudies: ["M.A.", "MFA", "M.Ed", "PhD", "LLM"], industries: ["Media", "Education", "Government", "Law", "NGOs"] },
@@ -132,7 +127,6 @@ function getComparisonSummary(degreeA: Degree, degreeB: Degree) {
   if (uniqueIndB.length > 0) diff.push(`${degreeB.name} is relevant in: ${uniqueIndB.join(", ")}`);
 
   // Compare higher studies
-  const hsA = new Set(degreeA.higherStudies);
   const hsB = new Set(degreeB.higherStudies);
   const sharedHS = degreeA.higherStudies.filter(h => hsB.has(h));
   if (sharedHS.length > 0) {
@@ -141,7 +135,6 @@ function getComparisonSummary(degreeA: Degree, degreeB: Degree) {
   if (degreeA.higherStudies.join() !== degreeB.higherStudies.join()) diff.push("Higher studies options differ.");
 
   // Compare exams
-  const examsA = new Set(degreeA.exams);
   const examsB = new Set(degreeB.exams);
   const sharedExams = degreeA.exams.filter(e => examsB.has(e));
   if (sharedExams.length > 0) {
@@ -150,7 +143,7 @@ function getComparisonSummary(degreeA: Degree, degreeB: Degree) {
   if (degreeA.exams.join() !== degreeB.exams.join()) diff.push("Exams required are different.");
 
   // Insights
-  let insights: string[] = [];
+  const insights: string[] = [];
   if (uniqueA.length > uniqueB.length) {
     insights.push(`${degreeA.name} has a wider variety of career options.`);
   } else if (uniqueB.length > uniqueA.length) {

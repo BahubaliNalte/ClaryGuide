@@ -10,7 +10,6 @@ import { ref, push } from "firebase/database";
 export default function MentorPage() {
   type MentorRequest = { id: string; name?: string; email?: string; mobile?: string; mentorshipArea?: string; date?: string; time?: string; message?: string; status?: string; meetingLink?: string; value?: unknown };
   const [myRequests, setMyRequests] = useState<MentorRequest[]>([]);
-  const [showRequests, setShowRequests] = useState(false);
   // Fetch user's submitted requests by email
   const fetchMyRequests = async () => {
     if (!form.email) return;
@@ -83,7 +82,6 @@ export default function MentorPage() {
       await push(ref(db, "mentor_requests"), form);
       setSuccess("Your request has been submitted! A mentor will contact you soon.");
       setForm({ name: "", email: "", mobile: "", message: "", date: "", time: "", mentorshipArea: "Career Guidance" });
-      setShowRequests(true);
       fetchMyRequests();
     } catch {
       setError("Failed to submit request. Please try again.");
