@@ -71,7 +71,7 @@ export default function CareerChatbot() {
 						<Image src="/logo-favicon.png" alt="ClaryBot" width={36} height={36} className="rounded-full" />
 						<h2 className="text-2xl font-bold text-[#2386ff]">ClaryBot</h2>
 					</div>
-					<p className="text-[#1a3c6b] text-center mb-4">Ask about degrees, exams, colleges, careers. Works offline with preloaded FAQs!</p>
+					<p className="text-[#1a3c6b] text-center mb-4">Ask about degrees, exams, colleges, careers.</p>
 					<div className="h-80 overflow-y-auto flex flex-col gap-2 mb-4 px-2" style={{ background: "#f6fcfd", borderRadius: "1rem" }}>
 						{messages.map((msg, i) => (
 							<div key={i} className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"}`}>
