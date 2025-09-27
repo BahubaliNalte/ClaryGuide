@@ -256,7 +256,7 @@ function DegreeComparison() {
       fontFamily: "Segoe UI, Arial, sans-serif",
       overflowX: "hidden"
     }}>
-      <h1 style={{ textAlign: "center", fontSize: "2.5rem", fontWeight: 700, marginBottom: "2rem", letterSpacing: 1, color: "#1976d2" }}>Degree Comparison Tool</h1>
+      <h1 style={{ textAlign: "center", fontSize: "2.5rem", fontWeight: 700, marginBottom: "2rem", letterSpacing: 1, color: "#1976d2" }}>Career Comparison Tool</h1>
       <div style={{ display: "flex", gap: "2rem", justifyContent: "center", marginBottom: "2.5rem" }}>
         {[0, 1].map((idx) => (
           <select
