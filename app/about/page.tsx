@@ -9,8 +9,8 @@ const team = [
   { name: "Latesh Kumar",  img: "/Latesh Kumar.jpg" },
   { name: "Bahubali Nalte",  img: "/Bahubali Nalte.jpg" },
   { name: "Puneet Sen", img: "/Puneet Sen.jpg" },
-  { name: "Riya", img: "/Riya.jpg" },
-  { name: "Aditya Verma",  img: "/logo-favicon.png" },
+  { name: "Riya Kumari", img: "/Riya.jpg" },
+  { name: "Mradul Gautam",  img: "/Mradul Gautam.jpg" },
 ];
 
 export default function About() {
@@ -31,9 +31,7 @@ export default function About() {
         <div className="flex flex-col items-end p-6">
           <button className="text-3xl text-[#2386ff] mb-8" onClick={() => {
             const drawer = document.getElementById('mobileDrawer');
-            const drawerNav = document.getElementById('mobileDrawerNav');
             if (drawer) drawer.classList.add('hidden');
-            if (drawerNav) drawerNav.classList.add('hidden');
           }} aria-label="Close menu">✕</button>
           <nav className="flex flex-col gap-6 text-lg font-medium items-center w-full">
             {navLinks.map(({ href, label }) => {
@@ -57,31 +55,40 @@ export default function About() {
       </div>
 
       {/* About Us Section */}
-      <main className="flex-1 flex flex-col items-center justify-center px-4 py-12 animate-fade-in">
-        <h2 className="text-4xl font-extrabold text-[#2386ff] mb-8 text-center">About Us</h2>
-        <div className="max-w-3xl mx-auto mb-12 text-center">
-          <p className="text-lg text-[#1a3c6b] mb-4">ClaryGuide is dedicated to helping students find clarity in their career paths through AI-powered guidance, visual roadmaps, and college information.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white/80 rounded-2xl shadow-lg p-6">
-              <h3 className="text-2xl font-bold text-[#2386ff] mb-2">Our Vision</h3>
-              <p className="text-[#1a3c6b]">Empower every student to make informed career choices and achieve their dreams with clarity and confidence.</p>
-            </div>
-            <div className="bg-white/80 rounded-2xl shadow-lg p-6">
-              <h3 className="text-2xl font-bold text-[#2386ff] mb-2">Our Goals</h3>
-              <p className="text-[#1a3c6b]">Provide personalized career guidance, easy access to college info, and visual roadmaps for every career journey.</p>
-            </div>
-          </div>
-        </div>
-        <h3 className="text-3xl font-bold text-[#2386ff] mb-6 text-center">Meet Our Team</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {team.map((member, idx) => (
-            <div key={idx} className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center gap-2 hover:scale-105 transition-transform duration-200">
-              <Image src={member.img} alt={member.name} width={64} height={64} className="rounded-full mb-2" />
-              <h4 className="font-bold text-lg text-[#2386ff]">{member.name}</h4>
+      <main className="flex-1 w-full px-2 py-0 animate-fade-in">
+        {/* Hero Section */}
+        <section className="w-full bg-gradient-to-r from-[#e3eaff] via-[#f6fcfd] to-[#c1f2e7] py-16 flex flex-col items-center justify-center mb-0 rounded-b-3xl shadow-lg">
+          <h2 className="text-5xl font-extrabold text-[#2386ff] mb-4 text-center drop-shadow-lg">About ClaryGuide</h2>
+          <p className="text-xl text-[#1a3c6b] mb-6 text-center max-w-2xl">ClaryGuide is dedicated to helping students find clarity in their career paths through AI-powered guidance, visual roadmaps, and college information.</p>
+        </section>
 
-            </div>
-          ))}
-        </div>
+        {/* Vision & Goals Section */}
+        <section className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 mb-16 px-2">
+          <div className="bg-white/90 rounded-3xl shadow-xl p-8 flex flex-col items-center border-t-4 border-[#2386ff] hover:scale-[1.02] transition-transform duration-200">
+            <h3 className="text-2xl font-bold text-[#2386ff] mb-3">Our Vision</h3>
+            <p className="text-[#1a3c6b] text-lg text-center">Empower every student to make informed career choices and achieve their dreams with clarity and confidence.</p>
+          </div>
+          <div className="bg-white/90 rounded-3xl shadow-xl p-8 flex flex-col items-center border-t-4 border-[#00bfae] hover:scale-[1.02] transition-transform duration-200">
+            <h3 className="text-2xl font-bold text-[#00bfae] mb-3">Our Goals</h3>
+            <p className="text-[#1a3c6b] text-lg text-center">Provide personalized career guidance, easy access to college info, and visual roadmaps for every career journey.</p>
+          </div>
+        </section>
+
+        {/* Team Section */}
+        <section className="w-full bg-gradient-to-br from-[#e3eaff]/60 via-[#f6fcfd]/80 to-[#c1f2e7]/60 py-12 px-2 rounded-3xl shadow-lg mb-8">
+          <h3 className="text-4xl font-bold text-[#2386ff] mb-10 text-center drop-shadow">Meet Our Team</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+            {team.map((member, idx) => (
+              <div key={idx} className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center gap-3 hover:scale-105 transition-transform duration-200 border-t-4 border-[#e3eaff]">
+                <div className="w-24 h-24 mb-3 flex items-center justify-center overflow-hidden rounded-full border-4 border-[#2386ff] shadow-lg bg-white">
+                  <Image src={member.img} alt={member.name} width={96} height={96} className="rounded-full object-cover w-full h-full" />
+                </div>
+                <h4 className="font-bold text-xl text-[#2386ff] text-center mb-1">{member.name}</h4>
+                {/* Add more info here if available */}
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
 {/* Floating Chatbot */}
 		<Link

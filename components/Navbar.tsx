@@ -55,11 +55,15 @@ export default function Navbar() {
   return (
     <header className="w-full flex items-center justify-between px-4 md:px-8 py-6 bg-transparent animate-fade-in relative">
       <div className="flex items-center gap-3">
-        <Image src="/logo-favicon.png" alt="ClaryGuide Logo" width={48} height={48} className="rounded-xl drop-shadow-lg animate-fade-in" />
-        <div>
-          <h1 className="font-bold text-2xl text-[#2386ff] tracking-tight animate-slide-in">ClaryGuide</h1>
-          <p className="text-sm text-[#6b7280] animate-fade-in">Clarity Today, Career Tomorrow</p>
-        </div>
+        <Link href="/" className="flex items-center gap-3">
+          <Image src="/logo-favicon.png" alt="ClaryGuide Logo" width={48} height={48} className="rounded-xl drop-shadow-lg animate-fade-in" />
+          <div>
+        <span className="font-bold text-2xl text-[#2386ff] tracking-tight animate-slide-in">
+          ClaryGuide
+        </span>
+        <p className="text-sm text-[#6b7280] animate-fade-in">Clarity Today, Career Tomorrow</p>
+          </div>
+        </Link>
       </div>
       <nav className="hidden md:flex items-center gap-8 text-base md:text-lg font-medium">
         {navLinks.map(({ href, label }) => {
