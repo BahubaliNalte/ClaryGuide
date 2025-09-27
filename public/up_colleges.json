@@ -4626,11 +4626,11 @@
   "Mathura": {
     "Government": [
       {
-        "Name": "TBD Government College/University",
+        "Name": "Government Polytechnic Kotwan, Mathura",
         "Approvals": [],
         "StudentRating": null,
         "Location": null,
-        "Website": null,
+        "Website":"https://gpkmathura.com",
         "ContactPhone": null,
         "EstablishedYear": null,
         "NumberOfSeats": null,
@@ -4643,11 +4643,11 @@
         ]
       },
       {
-        "Name": "TBD Government College/University 2",
+        "Name": "Government ITI, Gobardhan, Mathura",
         "Approvals": [],
         "StudentRating": null,
         "Location": null,
-        "Website": null,
+        "Website": "https://urise.up.gov.in/iti/172",
         "ContactPhone": null,
         "EstablishedYear": null,
         "NumberOfSeats": null,
@@ -4662,11 +4662,11 @@
     ],
     "Private": [
       {
-        "Name": "TBD Private College/University",
+        "Name": "Rajiv Academy for Technology and Management, Mathura",
         "Approvals": [],
         "StudentRating": null,
         "Location": null,
-        "Website": null,
+        "Website": "https://ratm.in",
         "ContactPhone": null,
         "EstablishedYear": null,
         "NumberOfSeats": null,
@@ -4679,11 +4679,11 @@
         ]
       },
       {
-        "Name": "TBD Private College/University 2",
+        "Name": "BSA College of Engineering & Technology (BSACET), Mathura",
         "Approvals": [],
         "StudentRating": null,
         "Location": null,
-        "Website": null,
+        "Website": "https://bsapgcollege.ac.in/",
         "ContactPhone": null,
         "EstablishedYear": null,
         "NumberOfSeats": null,
@@ -4696,11 +4696,11 @@
         ]
       },
       {
-        "Name": "TBD Private College/University 3",
+        "Name": " GLA University, Mathura",
         "Approvals": [],
         "StudentRating": null,
         "Location": null,
-        "Website": null,
+        "Website": "https://www.gla.ac.in",
         "ContactPhone": null,
         "EstablishedYear": null,
         "NumberOfSeats": null,
