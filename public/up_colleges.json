@@ -4636,7 +4636,7 @@
         "NumberOfSeats": null,
         "Courses": [
           {
-            "CourseName": "TBD",
+            "CourseName": "Diploma",
             "Specialization": null,
             "FeePerSemester": null
           }
@@ -4653,7 +4653,7 @@
         "NumberOfSeats": null,
         "Courses": [
           {
-            "CourseName": "TBD",
+            "CourseName": "ITI",
             "Specialization": null,
             "FeePerSemester": null
           }
@@ -4672,7 +4672,7 @@
         "NumberOfSeats": null,
         "Courses": [
           {
-            "CourseName": "TBD",
+            "CourseName": "BCA",
             "Specialization": null,
             "FeePerSemester": null
           }
@@ -4689,7 +4689,7 @@
         "NumberOfSeats": null,
         "Courses": [
           {
-            "CourseName": "TBD",
+            "CourseName": "B.A",
             "Specialization": null,
             "FeePerSemester": null
           }
@@ -4706,7 +4706,7 @@
         "NumberOfSeats": null,
         "Courses": [
           {
-            "CourseName": "TBD",
+            "CourseName": "B.Tech",
             "Specialization": null,
             "FeePerSemester": null
           }
