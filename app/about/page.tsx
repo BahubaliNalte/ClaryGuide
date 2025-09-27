@@ -31,7 +31,9 @@ export default function About() {
         <div className="flex flex-col items-end p-6">
           <button className="text-3xl text-[#2386ff] mb-8" onClick={() => {
             const drawer = document.getElementById('mobileDrawer');
+            const drawerNav = document.getElementById('mobileDrawerNav');
             if (drawer) drawer.classList.add('hidden');
+            if (drawerNav) drawerNav.classList.add('hidden');
           }} aria-label="Close menu">✕</button>
           <nav className="flex flex-col gap-6 text-lg font-medium items-center w-full">
             {navLinks.map(({ href, label }) => {
@@ -99,7 +101,7 @@ export default function About() {
 												<span className="font-bold text-[#2386ff] text-lg animate-slide-in">ClaryGuide</span>
 											</div>
 											<div className="flex flex-col sm:flex-row gap-4 sm:gap-8 flex-wrap text-lg items-center justify-center w-full sm:w-auto mb-4 sm:mb-0">
-												<Link href="/" className="text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
+                        <Link href="/" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
 												<Link href="/about" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">About Us</Link>
 												<Link href="/features" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Features</Link>
 												<Link href="/chatbot" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">ClaryBot</Link>

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Clary Guide",
+  title: "ClaryGuide",
   description: "Clarity Today, Career Tomorrow",
 };
 

@@ -148,7 +148,7 @@ export default function MentorPage() {
                       <option value="Other">Other</option>
                     </select>
                     <textarea name="message" placeholder="Your Message" value={form.message} onChange={handleChange} required className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b]" />
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 w-full">
                       <label htmlFor="date" className="text-[#2386ff] font-semibold text-base mb-1">Select Date</label>
                       <input
                         id="date"
@@ -163,11 +163,11 @@ export default function MentorPage() {
                           d.setMonth(d.getMonth() + 1);
                           return d.toISOString().split("T")[0];
                         })()}
-                        className="border border-[#2386ff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b] bg-white placeholder-[#2386ff] focus:ring-2 focus:ring-[#2386ff]"
+                        className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b] w-full bg-white placeholder-[#2386ff] focus:ring-2 focus:ring-[#2386ff]"
                         placeholder="Select Date"
                       />
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 w-full">
                       <label htmlFor="time" className="text-[#2386ff] font-semibold text-base mb-1">Select Time</label>
                       <input
                         id="time"
@@ -179,7 +179,7 @@ export default function MentorPage() {
                         min="07:00"
                         max="22:00"
                         step="900"
-                        className="border border-[#2386ff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b] bg-white placeholder-[#2386ff] focus:ring-2 focus:ring-[#2386ff]"
+                        className="border border-[#e3eaff] rounded-2xl px-4 py-3 text-lg text-[#1a3c6b] w-full bg-white placeholder-[#2386ff] focus:ring-2 focus:ring-[#2386ff]"
                         placeholder="Select Time"
                       />
                     </div>
@@ -213,7 +213,7 @@ export default function MentorPage() {
 												<span className="font-bold text-[#2386ff] text-lg animate-slide-in">ClaryGuide</span>
 											</div>
 											<div className="flex flex-col sm:flex-row gap-4 sm:gap-8 flex-wrap text-lg items-center justify-center w-full sm:w-auto mb-4 sm:mb-0">
-												<Link href="/" className="text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
+												 <Link href="/" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
 												<Link href="/about" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">About Us</Link>
 												<Link href="/features" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Features</Link>
 												<Link href="/chatbot" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">ClaryBot</Link>

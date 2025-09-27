@@ -119,11 +119,11 @@ export default function CareerPathsPage() {
                   <span className={`transform transition-transform ${openCategories[cat.name] ? "rotate-90" : "rotate-0"}`}>▶</span>
                 </button>
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${openCategories[cat.name] ? "max-h-[2000px] py-6" : "max-h-0 py-0"}`}
+                  className={`transition-all duration-300 ${openCategories[cat.name] ? "py-6" : "max-h-0 py-0 overflow-hidden"}`}
                 >
-                  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 px-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-2 sm:px-6 overflow-visible">
                     {catDegrees.map((deg) => (
-                      <div key={deg.name} className="bg-gradient-to-br from-blue-100 to-white rounded-xl shadow-md p-6 border-t-4 border-blue-400 hover:scale-[1.03] hover:shadow-xl transition-all">
+                      <div key={deg.name} className="bg-gradient-to-br from-blue-100 to-white rounded-xl shadow-md p-6 border-t-4 border-blue-400 hover:scale-[1.03] hover:shadow-xl transition-all w-full min-h-[320px] flex flex-col">
                         <h3 className="text-xl font-bold text-blue-700 mb-2 flex items-center gap-2">
                           <span className="inline-block w-7 h-7 bg-blue-200 rounded-full text-center text-lg font-bold mr-2">{deg.name[0]}</span>
                           {deg.name}
@@ -196,7 +196,7 @@ export default function CareerPathsPage() {
 												<span className="font-bold text-[#2386ff] text-lg animate-slide-in">ClaryGuide</span>
 											</div>
 											<div className="flex flex-col sm:flex-row gap-4 sm:gap-8 flex-wrap text-lg items-center justify-center w-full sm:w-auto mb-4 sm:mb-0">
-												<Link href="/" className="text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
+												 <Link href="/" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
 												<Link href="/about" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">About Us</Link>
 												<Link href="/features" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Features</Link>
 												<Link href="/chatbot" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">ClaryBot</Link>

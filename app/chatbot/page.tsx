@@ -69,7 +69,7 @@ export default function CareerChatbot() {
 				<div className="max-w-xl w-full mx-auto bg-white/80 rounded-2xl shadow-2xl p-6 backdrop-blur-lg">
 					<div className="flex items-center gap-3 mb-2">
 						<Image src="/logo-favicon.png" alt="ClaryBot" width={36} height={36} className="rounded-full" />
-						<h2 className="text-2xl font-bold text-[#2386ff]">AI-Powered Career ClayBot</h2>
+						<h2 className="text-2xl font-bold text-[#2386ff]">AI-Powered Career ClaryBot</h2>
 					</div>
 					<p className="text-[#1a3c6b] text-center mb-4">Ask about degrees, exams, colleges, careers. Works offline with preloaded FAQs!</p>
 					<div className="h-80 overflow-y-auto flex flex-col gap-2 mb-4 px-2" style={{ background: "#f6fcfd", borderRadius: "1rem" }}>
@@ -117,7 +117,7 @@ export default function CareerChatbot() {
 												<span className="font-bold text-[#2386ff] text-lg animate-slide-in">ClaryGuide</span>
 											</div>
 											<div className="flex flex-col sm:flex-row gap-4 sm:gap-8 flex-wrap text-lg items-center justify-center w-full sm:w-auto mb-4 sm:mb-0">
-												<Link href="/" className="text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
+												 <Link href="/" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
 												<Link href="/about" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">About Us</Link>
 												<Link href="/features" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Features</Link>
 												<Link href="/chatbot" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">ClaryBot</Link>

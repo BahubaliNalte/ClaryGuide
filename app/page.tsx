@@ -98,8 +98,8 @@ export default function Home() {
 					<Link href="/quiz" className="bg-white text-[#2386ff] px-4 py-2 rounded-full font-medium shadow hover:scale-105 transition-transform duration-200 flex items-center gap-2">
 						<span className="text-xl">🎯</span> Career Quiz
 					</Link>
-					<Link href="/courses" className="bg-white text-[#2386ff] px-4 py-2 rounded-full font-medium shadow hover:scale-105 transition-transform duration-200 flex items-center gap-2">
-						<span className="text-xl">🏫</span> Course Hub
+					<Link href="/college-hub" className="bg-white text-[#2386ff] px-4 py-2 rounded-full font-medium shadow hover:scale-105 transition-transform duration-200 flex items-center gap-2">
+						<span className="text-xl">🏫</span> College Hub
 					</Link>
 				</div>
 			</div>
@@ -186,7 +186,7 @@ export default function Home() {
 												<span className="font-bold text-[#2386ff] text-lg animate-slide-in">ClaryGuide</span>
 											</div>
 											<div className="flex flex-col sm:flex-row gap-4 sm:gap-8 flex-wrap text-lg items-center justify-center w-full sm:w-auto mb-4 sm:mb-0">
-												<Link href="/" className="text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
+											 <Link href="/" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Home</Link>
 												<Link href="/about" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">About Us</Link>
 												<Link href="/features" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">Features</Link>
 												<Link href="/chatbot" className="hover:text-[#2386ff] hover:scale-105 transition-transform duration-200">ClaryBot</Link>

@@ -1,11 +1,30 @@
 "use client";
 import { useEffect, useState } from "react";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { useRouter } from "next/navigation";
 import { db } from "../../firebaseConfig";
 import { ref, onValue, remove, update } from "firebase/database";
 import Navbar from "../../components/Navbar";
 
 export default function AdminPage() {
+  const router = useRouter();
+  const [authChecked, setAuthChecked] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [meetingLinks, setMeetingLinks] = useState<{[id: string]: string}>({});
+
+  useEffect(() => {
+    const auth = getAuth();
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user && user.email === "bahubalidnalte722006@gmail.com") { // <-- Set your admin email here
+        setIsAdmin(true);
+      } else {
+        setIsAdmin(false);
+        router.replace("/auth"); // Redirect to login if not admin
+      }
+      setAuthChecked(true);
+    });
+    return () => unsubscribe();
+  }, [router]);
 
   const handleSendMeetingLink = async (id: string) => {
     const link = meetingLinks[id];
@@ -94,11 +113,21 @@ export default function AdminPage() {
     setMentorRequests(mentorRequests.filter((req) => req.id !== id));
   };
 
+  if (!authChecked) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-lg">Checking authentication...</div>
+      </div>
+    );
+  }
+  if (!isAdmin) {
+    return null; // Or show a message if you prefer
+  }
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#f6fcfd] via-[#e3eaff] to-[#c1f2e7] flex flex-col">
       <Navbar />
       <main className="flex-1 max-w-6xl mx-auto py-12 px-4">
-  <h2 className="text-3xl font-bold text-[#2386ff] mb-8 text-center">Admin Dashboard</h2>
+        <h2 className="text-3xl font-bold text-[#2386ff] mb-8 text-center">Admin Dashboard</h2>
         {loading ? (
           <div className="text-center text-lg">Loading...</div>
         ) : (
@@ -111,9 +140,8 @@ export default function AdminPage() {
               ) : (
                 <ul className="space-y-3">
                   {users.map((user) => (
-                    <li key={user.id} className="border-b pb-2 flex justify-between items-center">
+                    <li key={user.id} className="border-b pb-2 flex items-center">
                       <span className="text-[#1a3c6b]">{user.name || user.email || user.id}</span>
-                      <button onClick={() => handleDeleteUser(user.id)} className="text-red-500 hover:underline">Delete</button>
                     </li>
                   ))}
                 </ul>
@@ -145,17 +173,19 @@ export default function AdminPage() {
                 <div className="space-y-6">
                   {mentorRequests.map((req) => (
                     <div key={req.id} className="rounded-xl border border-[#e3eaff] bg-white/90 shadow p-5 mb-2">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mb-2">
-                        <div className="text-[#1a3c6b] break-all"><strong>Name:</strong> {req.name}</div>
-                        <div className="text-[#1a3c6b] break-all"><strong>Email:</strong> {req.email}</div>
-                        <div className="text-[#1a3c6b]"><strong>Mobile:</strong> {req.mobile}</div>
-                        <div className="text-[#1a3c6b]"><strong>Mentorship Area:</strong> {req.mentorshipArea}</div>
-                        <div className="text-[#1a3c6b]"><strong>Date:</strong> {req.date}</div>
-                        <div className="text-[#1a3c6b]"><strong>Time:</strong> {req.time}</div>
-                        <div className="text-[#1a3c6b] col-span-2 break-all"><strong>Message:</strong> {req.message}</div>
-                        <div className="text-[#1a3c6b]"><strong>Status:</strong> <span className={`font-bold ${req.status === "accepted" ? "text-green-600" : req.status === "rejected" ? "text-red-500" : "text-[#2386ff]"}`}>{req.status || "pending"}</span></div>
+                      <div className="mb-2">
+                        {/* Mentor Image Placeholder - replace src with actual image if available */}
+                        {/* <img src="/path/to/mentor-image.jpg" alt="Mentor" className="w-12 h-12 rounded-full mb-2" /> */}
+                        <div className="text-[#1a3c6b] break-all mb-1"><strong>Name:</strong> {req.name}</div>
+                        <div className="text-[#1a3c6b] break-all mb-1"><strong>Email:</strong> {req.email}</div>
+                        <div className="text-[#1a3c6b] mb-1"><strong>Mobile:</strong> {req.mobile}</div>
+                        <div className="text-[#1a3c6b] mb-1"><strong>Mentorship Area:</strong> {req.mentorshipArea}</div>
+                        <div className="text-[#1a3c6b] mb-1"><strong>Date:</strong> {req.date}</div>
+                        <div className="text-[#1a3c6b] mb-1"><strong>Time:</strong> {req.time}</div>
+                        <div className="text-[#1a3c6b] break-all mb-1"><strong>Message:</strong> {req.message}</div>
+                        <div className="text-[#1a3c6b] mb-1"><strong>Status:</strong> <span className={`font-bold ${req.status === "accepted" ? "text-green-600" : req.status === "rejected" ? "text-red-500" : "text-[#2386ff]"}`}>{req.status || "pending"}</span></div>
                         {req.meetingLink && (
-                          <div className="text-[#2386ff] col-span-2 break-all"><strong>Meeting Link:</strong> <a href={req.meetingLink} target="_blank" rel="noopener noreferrer" className="underline break-all">{req.meetingLink}</a></div>
+                          <div className="text-[#2386ff] break-all mb-1"><strong>Meeting Link:</strong> <a href={req.meetingLink} target="_blank" rel="noopener noreferrer" className="underline break-all">{req.meetingLink}</a></div>
                         )}
                       </div>
                       <div className="flex flex-wrap gap-2 mt-4 items-center">
