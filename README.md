@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ClaryGuide
+
+ClaryGuide is a career guidance platform designed to help students explore career paths, compare courses, connect with mentors, and access college information. It features AI-assisted suggestions, visual roadmaps, and a user-friendly interface.
+
+## Features
+
+- **Career Paths:** Search and explore degrees, careers, exams, higher studies, and industries.
+- **College Hub:** Find colleges, filter by city/type, and view details.
+- **Mentor Connect:** Book mentorship sessions, auto-fill user info, select date/time.
+- **Admin Dashboard:** Manage users, contacts, mentor requests (secure access).
+- **ClaryBot:** AI-powered chatbot for career queries.
+- **Responsive Design:** Works seamlessly on mobile and desktop.
+- **Authentication:** Secure login/signup, profile management.
+
+## Tech Stack
+
+### Frontend
+- [Next.js](https://nextjs.org/) (React-based SSR & SSG)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Firebase Authentication](https://firebase.google.com/docs/auth)
+- [Vercel](https://vercel.com/) for deployment
+
+### Backend
+- [Firebase Realtime Database](https://firebase.google.com/docs/database)
+- RESTful APIs for data fetching and management
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/ClaryGuide.git
+   cd ClaryGuide
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Set up environment variables:**
+   - Create a `.env.local` file and add your Firebase and API keys.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+- The project is deployed on [Vercel](https://vercel.com/).
+- Push to `main` branch for automatic deployment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Security
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Admin routes are protected using Firebase Authentication and email-based checks.
+- User data is securely managed via Firebase.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please open issues or submit pull requests for improvements.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+**ClaryGuide – Clarity Today, Career Tomorrow**
