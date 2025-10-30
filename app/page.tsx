@@ -87,8 +87,11 @@ export default function Home() {
 					<Link href="/chatbot" className="bg-gradient-to-r from-[#3ecf8e] to-[#2386ff] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 flex items-center gap-2">
 						<span className="text-xl">🤖</span> Talk to ClaryBot
 					</Link>
-					<Link href="/mentor" className="bg-gradient-to-r from-[#00bfae] to-[#2386ff] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 flex items-center gap-2">
+					<Link href="/mentorreq" className="bg-gradient-to-r from-[#00bfae] to-[#2386ff] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 flex items-center gap-2">
 						<span className="text-xl">🧑‍🏫</span> Connect with our Mentor
+					</Link>
+					<Link href="/mentor" className="bg-gradient-to-r from-[#8D44FF] to-[#2386ff] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 flex items-center gap-2">
+						<span className="text-xl">🧑‍💼</span> Mentor Portal
 					</Link>
 				</div>
 				<div className="flex flex-wrap gap-4">

@@ -1,0 +1,114 @@
+[
+  {
+    "question": "Hi",
+    "answer": "Hello I am ClaryBot How can i help you."
+  },
+  {
+    "question": "What is the scope of B.Sc. Agriculture?",
+    "answer": "B.Sc. Agriculture offers careers in agronomy, farm management, research, government jobs, and agribusiness. Graduates can work in agricultural companies, government agencies, or pursue higher studies."
+  },
+  {
+    "question": "Which government exams can I give after B.A.?",
+    "answer": "After B.A., you can appear for UPSC, SSC, State PSC, Banking exams, Railways, and teaching eligibility tests like TET/CTET."
+  },
+  {
+    "question": "Nearest colleges with B.Com. Computer Applications?",
+    "answer": "Please provide your location to get a list of nearby colleges offering B.Com. Computer Applications."
+  },
+  {
+    "question": "Can I do MBA after B.Sc.?",
+    "answer": "Yes, you can pursue an MBA after B.Sc. Many universities accept graduates from any stream for MBA programs."
+  },
+  {
+    "question": "What are the career options after BFA?",
+    "answer": "After BFA, you can become an artist, designer, animator, art teacher, or photographer. Opportunities exist in media, design, and education sectors."
+  },
+    {
+      "question": "How to prepare for UPSC exams?",
+      "answer": "Start with understanding the syllabus, create a study plan, read NCERT books, stay updated with current affairs, practice previous years' papers, and consider joining a coaching institute if needed."
+    },  
+   {
+      "question": "What are the top career options after 12th science in India?",
+      "answer": "After 12th science, popular career options include engineering (B.Tech), medicine (MBBS, BDS), pharmacy, biotechnology, pure sciences (B.Sc), architecture, and paramedical courses. Choose based on your interests, aptitude, and long-term goals."
+    },
+    {
+      "question": "How can I choose the right college for engineering?",
+      "answer": "Consider factors like college ranking, faculty, placement records, location, fees, and available branches. Research online, visit campuses if possible, and talk to current students or alumni for insights."
+    },
+    {
+      "question": "What is NEET and who should take it?",
+      "answer": "NEET (National Eligibility cum Entrance Test) is the entrance exam for medical courses like MBBS, BDS, and AYUSH in India. Students who wish to pursue medicine after 12th must take NEET."
+    },
+    {
+      "question": "How do I prepare effectively for competitive exams like JEE or NEET?",
+      "answer": "Make a realistic study plan, focus on understanding concepts, practice previous years' papers, take regular mock tests, and revise frequently. Use NCERT books and trusted reference materials."
+    },
+    {
+      "question": "What are the best career options after 12th commerce?",
+      "answer": "Commerce students can pursue careers in B.Com, BBA, CA, CS, CMA, banking, finance, management, law, and digital marketing. Explore your interests and research each field before deciding."
+    },
+    {
+      "question": "Can I switch from science to arts or commerce after 12th?",
+      "answer": "Yes, you can switch streams after 12th, but check eligibility criteria for the courses you wish to pursue. Some professional courses may require specific subjects in 12th."
+    },
+    {
+      "question": "What is the scope of data science in India?",
+      "answer": "Data science is a rapidly growing field with opportunities in IT, finance, healthcare, e-commerce, and more. Skills in statistics, programming, and machine learning are essential. Courses like B.Sc Data Science, B.Tech, and online certifications are available."
+    },
+    {
+      "question": "How do I choose a career if I am confused?",
+      "answer": "Start by assessing your interests, strengths, and values. Take career aptitude tests, talk to mentors, research different fields, and consider job prospects. It's okay to seek guidance and take time to decide."
+    },
+    {
+      "question": "What are the top government exams after graduation?",
+      "answer": "Popular government exams include UPSC Civil Services, SSC CGL, IBPS PO, SBI PO, RRB, State PSCs, and teaching exams like CTET. Each exam has different eligibility and preparation strategies."
+    },
+    {
+      "question": "Is studying abroad a good option for Indian students?",
+      "answer": "Studying abroad offers global exposure, quality education, and better career prospects. Consider factors like cost, scholarships, course recognition, and visa policies before applying."
+    },
+    {
+      "question": "What are the best ways to find internships during college?",
+      "answer": "Use college placement cells, online platforms like Internshala, LinkedIn, and Naukri, attend career fairs, and network with professionals. Tailor your resume and apply early."
+    },
+    {
+      "question": "How important are extracurricular activities for college admissions?",
+      "answer": "Extracurriculars show your skills, interests, and leadership qualities. They can strengthen your college application, especially for holistic admission processes."
+    },
+    {
+      "question": "What is the difference between B.Tech and B.Sc?",
+      "answer": "B.Tech is an engineering degree focused on technical and practical skills, while B.Sc is a science degree emphasizing theoretical knowledge. Choose based on your career goals and interests."
+    },
+    {
+      "question": "How can I become a Chartered Accountant (CA) in India?",
+      "answer": "After 12th, enroll in the CA Foundation course, clear the exams, then proceed to Intermediate and Final levels. Complete required articleship training and pass all exams to become a CA."
+    },
+    {
+      "question": "What are the top career options in arts and humanities?",
+      "answer": "Arts students can pursue careers in journalism, law, psychology, design, teaching, social work, civil services, and more. Explore your interests and research each field for opportunities."
+    },
+    {
+      "question": "How do I prepare for campus placements?",
+      "answer": "Build a strong resume, practice aptitude and technical tests, improve communication skills, research companies, and participate in mock interviews. Internships and projects add value."
+    },
+    {
+      "question": "What is the scope of biotechnology in India?",
+      "answer": "Biotechnology offers careers in research, pharmaceuticals, agriculture, healthcare, and environmental science. Courses include B.Sc, B.Tech, and M.Sc in Biotechnology."
+    },
+    {
+      "question": "Can I pursue law after 12th science or commerce?",
+      "answer": "Yes, you can pursue integrated law courses (BA LLB, BBA LLB, B.Sc LLB) after 12th from recognized universities. Entrance exams like CLAT are required for top law schools."
+    },
+    {
+      "question": "What are the best online courses for skill development?",
+      "answer": "Platforms like Coursera, Udemy, edX, and LinkedIn Learning offer courses in coding, data science, digital marketing, design, and more. Choose courses with good reviews and recognized certificates."
+    },
+    {
+      "question": "How do I get a scholarship for college?",
+      "answer": "Research government and private scholarships, check eligibility, prepare required documents, and apply before deadlines. Academic performance and extracurriculars often matter."
+    },
+    {
+      "question": "What is the difference between private and government colleges?",
+      "answer": "Government colleges usually have lower fees and good faculty, while private colleges may offer better infrastructure and placements. Research both options before deciding."
+    }
+]

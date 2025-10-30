@@ -74,7 +74,7 @@ export default function Features() {
             <p className="text-white text-lg drop-shadow">Compare different degrees, career paths, and growth opportunities to find your best fit.</p>
           </Link>
           {/* Mentor */}
-          <Link href="/mentor" className="bg-gradient-to-br from-[#ffd200] via-[#f7971e] to-[#ff5858] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
+          <Link href="/mentorreq" className="bg-gradient-to-br from-[#ffd200] via-[#f7971e] to-[#ff5858] rounded-3xl shadow-2xl p-8 hover:scale-105 transition-transform duration-200 block group">
             <div className="flex items-center gap-4 mb-2">
               <span className="text-4xl text-white drop-shadow">🧑‍🏫</span>
               <h3 className="text-2xl font-extrabold text-white group-hover:text-[#ffd200] transition-colors duration-200 drop-shadow">Mentor Connect</h3>

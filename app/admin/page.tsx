@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import { db } from "../../firebaseConfig";
-import { ref, onValue, remove, update } from "firebase/database";
+import { ref, onValue, remove, update, get } from "firebase/database";
 import Navbar from "../../components/Navbar";
 
 export default function AdminPage() {
@@ -15,7 +15,7 @@ export default function AdminPage() {
   useEffect(() => {
     const auth = getAuth();
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user && user.email === "claryguide@gmail.com") { // <-- Set your admin email here
+      if (user && user.email === "bahubalidnalte722006@gmail.com") { // <-- Set your admin email here
         setIsAdmin(true);
       } else {
         setIsAdmin(false);
@@ -29,13 +29,29 @@ export default function AdminPage() {
   const handleSendMeetingLink = async (id: string) => {
     const link = meetingLinks[id];
     if (!link) return;
-    await update(ref(db, `mentor_requests/${id}`), { meetingLink: link });
-    setMentorRequests(
-      mentorRequests.map((req) =>
-        req.id === id ? { ...req, meetingLink: link } : req
-      )
-    );
-    setMeetingLinks({ ...meetingLinks, [id]: "" });
+    try {
+      // Update the request with meetingLink
+      await update(ref(db, `mentor_requests/${id}`), { meetingLink: link });
+
+      // If the request is already assigned to a mentor, also update that mentor's schedule entry so mentor sees the link
+      const reqSnap = await get(ref(db, `mentor_requests/${id}`));
+      const reqData: any = reqSnap.exists() ? reqSnap.val() : null;
+      if (reqData && reqData.assignedTo) {
+        const assignedUid = reqData.assignedTo;
+        // Update mentor schedule entry if exists
+        await update(ref(db, `mentors/${assignedUid}/schedule/${id}`), { meetingLink: link });
+      }
+
+      // Update local UI state
+      setMentorRequests(
+        mentorRequests.map((req) =>
+          req.id === id ? { ...req, meetingLink: link } : req
+        )
+      );
+      setMeetingLinks({ ...meetingLinks, [id]: "" });
+    } catch (err) {
+      console.error('Failed to send meeting link', err);
+    }
   };
   type User = { id: string; name?: string; email?: string; value?: unknown };
   type Contact = { id: string; name?: string; email?: string; message?: string; value?: unknown };
@@ -43,6 +59,8 @@ export default function AdminPage() {
   const [users, setUsers] = useState<User[]>([]);
   const [contacts, setContacts] = useState<Contact[]>([]);
   const [mentorRequests, setMentorRequests] = useState<MentorRequest[]>([]);
+  const [mentorsList, setMentorsList] = useState<Array<{id: string; name?: string; email?: string; stream?: string}>>([]);
+  const [selectedMentor, setSelectedMentor] = useState<{[reqId: string]: string}>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -79,6 +97,20 @@ export default function AdminPage() {
     onValue(mentorRef, (snapshot) => {
       const data = snapshot.val() || {};
       setMentorRequests(
+        Object.entries(data).map(([id, value]) => {
+          if (typeof value === "object" && value !== null) {
+            return { id, ...value };
+          } else {
+            return { id, value };
+          }
+        })
+      );
+    });
+    // Fetch mentors list (so admin can assign requests to mentors)
+    const mentorsRef = ref(db, "mentors");
+    onValue(mentorsRef, (snapshot) => {
+      const data = snapshot.val() || {};
+      setMentorsList(
         Object.entries(data).map(([id, value]) => {
           if (typeof value === "object" && value !== null) {
             return { id, ...value };
@@ -192,6 +224,29 @@ export default function AdminPage() {
                         <button onClick={() => handleMentorStatus(req.id, "accepted")} className="bg-green-100 text-green-700 px-3 py-1 rounded-xl font-semibold hover:bg-green-200">Accept</button>
                         <button onClick={() => handleMentorStatus(req.id, "rejected")} className="bg-red-100 text-red-600 px-3 py-1 rounded-xl font-semibold hover:bg-red-200">Reject</button>
                         <button onClick={() => handleDeleteMentorRequest(req.id)} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-xl font-semibold hover:bg-gray-200">Delete</button>
+                        {/* Admin: assign this request to a mentor */}
+                        <select value={selectedMentor[req.id] || ""} onChange={e => setSelectedMentor({ ...selectedMentor, [req.id]: e.target.value })} className="border border-[#e3eaff] rounded-xl px-3 py-1 text-sm text-[#1a3c6b]">
+                          <option value="">Assign to mentor...</option>
+                          {mentorsList.map(m => (
+                            <option key={m.id} value={m.id}>{m.name || m.email || m.id}</option>
+                          ))}
+                        </select>
+                        <button onClick={async () => {
+                          const mentorUid = selectedMentor[req.id];
+                          if (!mentorUid) return;
+                          const mentor = mentorsList.find(m => m.id === mentorUid);
+                          try {
+                            // Update request with assigned mentor
+                            await update(ref(db, `mentor_requests/${req.id}`), { assignedTo: mentorUid, assignedToEmail: mentor?.email || null, status: 'assigned', assignedAt: new Date().toISOString() });
+                            // Add reference under mentor (assignedRequests)
+                            await update(ref(db, `mentors/${mentorUid}`), { [`assignedRequests/${req.id}`]: true });
+                            // Update local state
+                            setMentorRequests(mentorRequests.map(r => r.id === req.id ? { ...r, assignedTo: mentorUid, assignedToEmail: mentor?.email, status: 'assigned' } : r));
+                            setSelectedMentor({ ...selectedMentor, [req.id]: '' });
+                          } catch (err) {
+                            console.error('Assign failed', err);
+                          }
+                        }} className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-xl text-sm font-semibold hover:bg-indigo-200">Send to Mentor</button>
                         <input type="text" placeholder="Meeting Link" value={meetingLinks[req.id] || ""} onChange={e => setMeetingLinks({ ...meetingLinks, [req.id]: e.target.value })} className="border border-[#e3eaff] rounded-xl px-3 py-1 text-sm text-[#1a3c6b]" />
                         <button onClick={() => handleSendMeetingLink(req.id)} className="bg-[#2386ff] text-white px-3 py-1 rounded-xl text-sm font-semibold">Send Link</button>
                       </div>
