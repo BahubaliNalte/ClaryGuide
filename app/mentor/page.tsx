@@ -67,7 +67,7 @@ export default function MentorPage() {
 						<div className="flex items-center justify-between">
 							<div>
 								<h3 className="text-2xl font-semibold text-[#2386ff]">Welcome{mentorName ? `, ${mentorName}` : ""} 👋</h3>
-								<p className="text-[#1a3c6b] mt-2">You're signed in as a mentor. Use the tools below to manage sessions and mentees.</p>
+								<p className="text-[#1a3c6b] mt-2">You are signed in as a mentor. Use the tools below to manage sessions and mentees.</p>
 							</div>
 							<div className="flex gap-3 items-center">
 								<button onClick={handleLogout} className="bg-red-500 text-white px-4 py-2 rounded-lg">Logout</button>

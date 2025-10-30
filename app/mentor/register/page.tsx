@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Navbar from "../../../components/Navbar";
+import type { Mentor } from "../../../utils/types";
 import { auth, db } from "../../../firebaseConfig";
 import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
 import { ref, get, set } from "firebase/database";
@@ -25,9 +26,9 @@ export default function MentorRegisterPage() {
     try {
       // Check Realtime DB for existing mentor email
       const mentorsSnap = await get(ref(db, "mentors"));
-      const mentors = mentorsSnap.exists() ? mentorsSnap.val() : null;
+      const mentors = mentorsSnap.exists() ? (mentorsSnap.val() as Record<string, Mentor>) : null;
       if (mentors) {
-        const exists = Object.values(mentors as Record<string, any>).some((m: any) => m.email === form.email);
+        const exists = Object.values(mentors).some((m) => m.email === form.email);
         if (exists) {
           setError("A mentor with this email already exists.");
           setLoading(false);
@@ -53,8 +54,9 @@ export default function MentorRegisterPage() {
       // Optional: sign out the new user so they can login via the login page
       await signOut(auth);
       setTimeout(() => router.push("/mentor/login"), 1200);
-    } catch (err: any) {
-      setError(err?.message || "Registration failed. Please try again.");
+    } catch (err: unknown) {
+      const message = (err instanceof Error) ? err.message : String(err);
+      setError(message || "Registration failed. Please try again.");
     }
     setLoading(false);
   };

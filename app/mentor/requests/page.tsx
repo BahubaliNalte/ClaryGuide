@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Navbar from "../../../components/Navbar";
+import type { MentorRequest } from "../../../utils/types";
 import { auth, db } from "../../../firebaseConfig";
 import { onAuthStateChanged, User } from "firebase/auth";
 import { ref, get, onValue, update, set } from "firebase/database";
@@ -10,7 +11,7 @@ export default function MentorRequestsPage() {
   const [checking, setChecking] = useState(true);
   const [mentorUid, setMentorUid] = useState<string | null>(null);
   const [mentorName, setMentorName] = useState<string | null>(null);
-  const [assignedRequests, setAssignedRequests] = useState<any[]>([]);
+  const [assignedRequests, setAssignedRequests] = useState<MentorRequest[]>([]);
   const router = useRouter();
 
   useEffect(() => {
@@ -30,8 +31,8 @@ export default function MentorRequestsPage() {
           const mentorReqRef = ref(db, 'mentor_requests');
           onValue(mentorReqRef, (snapshot) => {
             const data = snapshot.val() || {};
-            const all = Object.entries(data).map(([id, value]) => (typeof value === 'object' && value !== null ? { id, ...value } : { id, value }));
-            const assigned = all.filter((r: any) => r.assignedTo === user.uid && r.status !== 'accepted' && r.status !== 'rejected');
+            const all = Object.entries(data).map(([id, value]) => (typeof value === 'object' && value !== null ? { id, ...(value as Record<string, unknown>) } : { id, value }));
+            const assigned = (all as MentorRequest[]).filter((r) => r.assignedTo === user.uid && r.status !== 'accepted' && r.status !== 'rejected');
             setAssignedRequests(assigned);
           });
         } else {
@@ -46,20 +47,20 @@ export default function MentorRequestsPage() {
     return () => unsub();
   }, [router]);
 
-  const handleAccept = async (req: any) => {
+  const handleAccept = async (req: MentorRequest) => {
     if (!mentorUid) return;
     try {
       // mark request accepted
       await update(ref(db, `mentor_requests/${req.id}`), { status: 'accepted', acceptedAt: new Date().toISOString(), acceptedBy: mentorUid });
       // add to mentor schedule
-      await set(ref(db, `mentors/${mentorUid}/schedule/${req.id}`), { ...req, scheduledAt: new Date().toISOString() });
+      await set(ref(db, `mentors/${mentorUid}/schedule/${req.id}`), { ...(req as Record<string, unknown>), scheduledAt: new Date().toISOString() });
       // local update will be handled by onValue listener
     } catch (err) {
       console.error('Accept failed', err);
     }
   };
 
-  const handleReject = async (req: any) => {
+  const handleReject = async (req: MentorRequest) => {
     if (!mentorUid) return;
     try {
       await update(ref(db, `mentor_requests/${req.id}`), { status: 'rejected', rejectedAt: new Date().toISOString(), rejectedBy: mentorUid });

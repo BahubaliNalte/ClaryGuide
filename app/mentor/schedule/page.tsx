@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Navbar from "../../../components/Navbar";
+import type { ScheduleItem } from "../../../utils/types";
 import { auth, db } from "../../../firebaseConfig";
 import { onAuthStateChanged, User } from "firebase/auth";
 import { ref, get, onValue } from "firebase/database";
@@ -8,9 +9,8 @@ import { useRouter } from "next/navigation";
 
 export default function MentorSchedulePage() {
   const [checking, setChecking] = useState(true);
-  const [mentorUid, setMentorUid] = useState<string | null>(null);
   const [mentorName, setMentorName] = useState<string | null>(null);
-  const [schedule, setSchedule] = useState<any[]>([]);
+  const [schedule, setSchedule] = useState<ScheduleItem[]>([]);
   const router = useRouter();
 
   useEffect(() => {
@@ -22,17 +22,16 @@ export default function MentorSchedulePage() {
       }
       try {
         const snap = await get(ref(db, `mentors/${user.uid}`));
-        if (snap.exists()) {
+          if (snap.exists()) {
           const data = snap.val();
-          setMentorUid(user.uid);
           setMentorName(data.name || null);
 
           // listen to mentor schedule
           const scheduleRef = ref(db, `mentors/${user.uid}/schedule`);
           onValue(scheduleRef, (s) => {
             const sch = s.val() || {};
-            const items = Object.entries(sch).map(([id, value]) => (typeof value === 'object' && value !== null ? { id, ...value } : { id, value }));
-            setSchedule(items);
+            const items = Object.entries(sch).map(([id, value]) => (typeof value === 'object' && value !== null ? { id, ...(value as Record<string, unknown>) } : { id, value }));
+            setSchedule(items as ScheduleItem[]);
           });
         } else {
           router.push('/mentor/login');

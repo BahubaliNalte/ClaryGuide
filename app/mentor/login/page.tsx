@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Navbar from "../../../components/Navbar";
+import type { Mentor } from "../../../utils/types";
 import { auth, db } from "../../../firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { ref, get } from "firebase/database";
@@ -25,13 +26,13 @@ export default function MentorLoginPage() {
     try {
       // Ensure this email belongs to a registered mentor in Realtime DB
       const mentorsSnap = await get(ref(db, "mentors"));
-      const mentors = mentorsSnap.exists() ? mentorsSnap.val() : null;
+      const mentors = mentorsSnap.exists() ? (mentorsSnap.val() as Record<string, Mentor>) : null;
       if (!mentors) {
         setError("No mentors registered yet.");
         setLoading(false);
         return;
       }
-      const found = Object.values(mentors as Record<string, any>).some((m: any) => m.email === form.email);
+      const found = Object.values(mentors).some((m) => m.email === form.email);
       if (!found) {
         setError("Mentor not found. Please register first.");
         setLoading(false);
@@ -42,8 +43,9 @@ export default function MentorLoginPage() {
       await signInWithEmailAndPassword(auth, form.email, form.password);
       setSuccess("Mentor logged in successfully!");
       setTimeout(() => router.push("/mentor"), 800);
-    } catch (err: any) {
-      setError(err?.message || "Login failed. Please try again.");
+    } catch (err: unknown) {
+      const message = (err instanceof Error) ? err.message : String(err);
+      setError(message || "Login failed. Please try again.");
     }
     setLoading(false);
   };

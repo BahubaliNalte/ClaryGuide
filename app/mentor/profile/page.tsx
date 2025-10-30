@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Navbar from "../../../components/Navbar";
+import type { Mentor } from "../../../utils/types";
 import { auth, db } from "../../../firebaseConfig";
 import { onAuthStateChanged, User } from "firebase/auth";
 import { ref, get, set } from "firebase/database";
@@ -8,7 +9,7 @@ import { useRouter } from "next/navigation";
 
 export default function MentorProfilePage() {
   const [checking, setChecking] = useState(true);
-  const [mentor, setMentor] = useState<any>(null);
+  const [mentor, setMentor] = useState<Mentor | null>(null);
   const router = useRouter();
 
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function MentorProfilePage() {
       try {
         const snap = await get(ref(db, `mentors/${user.uid}`));
         if (snap.exists()) {
-          setMentor(snap.val());
+          setMentor(snap.val() as Mentor);
         } else {
           router.push('/mentor/login');
         }
@@ -41,7 +42,7 @@ export default function MentorProfilePage() {
   const handleSave = async () => {
     if (!mentor?.uid) return;
     try {
-      await set(ref(db, `mentors/${mentor.uid}`), mentor);
+      await set(ref(db, `mentors/${mentor.uid}`), mentor as Record<string, unknown>);
       alert('Profile saved');
     } catch (err) {
       console.error(err);

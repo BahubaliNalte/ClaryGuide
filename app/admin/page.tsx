@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import type { AppUser, Contact, MentorRequest } from "../../utils/types";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import { db } from "../../firebaseConfig";
 import { ref, onValue, remove, update, get } from "firebase/database";
@@ -35,9 +36,9 @@ export default function AdminPage() {
 
       // If the request is already assigned to a mentor, also update that mentor's schedule entry so mentor sees the link
       const reqSnap = await get(ref(db, `mentor_requests/${id}`));
-      const reqData: any = reqSnap.exists() ? reqSnap.val() : null;
-      if (reqData && reqData.assignedTo) {
-        const assignedUid = reqData.assignedTo;
+      const reqData = reqSnap.exists() ? (reqSnap.val() as Record<string, unknown>) : null;
+      if (reqData && typeof reqData.assignedTo === 'string') {
+        const assignedUid = reqData.assignedTo as string;
         // Update mentor schedule entry if exists
         await update(ref(db, `mentors/${assignedUid}/schedule/${id}`), { meetingLink: link });
       }
@@ -53,10 +54,7 @@ export default function AdminPage() {
       console.error('Failed to send meeting link', err);
     }
   };
-  type User = { id: string; name?: string; email?: string; value?: unknown };
-  type Contact = { id: string; name?: string; email?: string; message?: string; value?: unknown };
-  type MentorRequest = { id: string; name?: string; email?: string; mobile?: string; mentorshipArea?: string; date?: string; time?: string; message?: string; status?: string; meetingLink?: string; value?: unknown };
-  const [users, setUsers] = useState<User[]>([]);
+  const [users, setUsers] = useState<AppUser[]>([]);
   const [contacts, setContacts] = useState<Contact[]>([]);
   const [mentorRequests, setMentorRequests] = useState<MentorRequest[]>([]);
   const [mentorsList, setMentorsList] = useState<Array<{id: string; name?: string; email?: string; stream?: string}>>([]);
@@ -123,11 +121,7 @@ export default function AdminPage() {
     setLoading(false);
   }, []);
 
-  // Delete user
-  const handleDeleteUser = async (id: string) => {
-    await remove(ref(db, `users/${id}`));
-    setUsers(users.filter((u) => u.id !== id));
-  };
+  // NOTE: user deletion handled via DB UI or extended admin actions. No local handler required here.
 
   // Accept/Reject mentor request
   const handleMentorStatus = async (id: string, status: "accepted" | "rejected") => {
