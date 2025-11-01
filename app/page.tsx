@@ -90,9 +90,6 @@ export default function Home() {
 					<Link href="/mentorreq" className="bg-gradient-to-r from-[#00bfae] to-[#2386ff] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 flex items-center gap-2">
 						<span className="text-xl">🧑‍🏫</span> Connect with our Mentor
 					</Link>
-					<Link href="/mentor" className="bg-gradient-to-r from-[#8D44FF] to-[#2386ff] text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 flex items-center gap-2">
-						<span className="text-xl">🧑‍💼</span> Mentor Portal
-					</Link>
 				</div>
 				<div className="flex flex-wrap gap-4">
 					<Link href="/compare" className="bg-white text-[#2386ff] px-4 py-2 rounded-full font-medium shadow hover:scale-105 transition-transform duration-200 flex items-center gap-2">
@@ -170,6 +167,14 @@ export default function Home() {
 				</div>
 			</div>
 			</section>
+
+		{/* CTA strip */}
+						<section className="w-full py-10 text-center bg-gradient-to-r from-[#f7fdfc] via-[#e3eaff] to-[#c1f2e7] mt-16 animate-fade-in">
+							<div className="cta-inner">
+								<h4 className="text-2xl text-[#00bfae] font-bold mb-4 animate-slide-in"><span className="text-xl">🧑‍💼</span> Connect as a Mentor</h4>
+								<Link className="bg-gradient-to-r from-[#3ecf8e] to-[#2386ff] text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200 text-xl animate-fade-in" href="/mentor">Conect Now</Link>
+							</div>
+						</section>
 			
 		{/* Floating Chatbot */}
 		<Link
