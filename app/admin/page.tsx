@@ -16,7 +16,7 @@ export default function AdminPage() {
   useEffect(() => {
     const auth = getAuth();
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user && user.email === "bahubalidnalte722006@gmail.com") { // <-- Set your admin email here
+      if (user && user.email === "claryguide@gmail.com") { // <-- Set your admin email here
         setIsAdmin(true);
       } else {
         setIsAdmin(false);
