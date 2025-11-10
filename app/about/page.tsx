@@ -8,7 +8,6 @@ const team = [
 	{ name: "Krishna Saxena", img: "/Krishna Saxena.jpg" },
 	{ name: "Latesh Kumar", img: "/Latesh Kumar.jpg" },
 	{ name: "Bahubali Nalte", img: "/Bahubali Nalte.jpg" },
-	{ name: "Puneet Sen", img: "/Puneet Sen.jpg" },
 	{ name: "Riya Kumari", img: "/Riya.jpg" },
 	{ name: "Mradul Gautam", img: "/Mradul Gautam.jpg" },
 ];
