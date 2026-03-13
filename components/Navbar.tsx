@@ -54,6 +54,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full flex items-center justify-between px-4 md:px-8 py-6 bg-transparent animate-fade-in relative">
+      <meta name="google-site-verification" content="DhYzqbeE1amhDy7oZGm7igbW3ZrA-JCg-gun_0ytRe8" />
       <div className="flex items-center gap-3">
         <Link href="/" className="flex items-center gap-3">
           <Image src="/logo-favicon.png" alt="ClaryGuide Logo" width={48} height={48} className="rounded-xl drop-shadow-lg animate-fade-in" />
